@@ -12,7 +12,11 @@
       <h1>Vanilla JavaScript</h1>
       <nav class="topNav">
         <ul>
-          <li><a href="#algorithmicChallenges">Algorithmic Challenges</a></li>
+          <li><a href="#algorithmicChallenges">Algorithmic Challenges</a>
+          <ul class="topNavHidden">
+            <li>Interactive Fibonacci Series Generator</li>
+            <li>Find Missing Number</li>
+          </ul></li>
           <li><a href="#asynchronousJavaScript">Asynchronous JavaScript</a></li>
           <li><a href="#errorHandling">Error Handling</a></li>
           <li><a href="#functionalProgramming">Functional Programming</a></li>
@@ -20,16 +24,17 @@
       </nav>
     </header>
     <main>
+      <section id="fibonacciGenerator">
       <h2 id="algorithmicChallenges">Interactive Fibonacci Series Generator</h2>
       <p>Calculate Fibonacci series numbers for (almost) any number!</p>
-      <form>
-          <input type="number" id="numberForFibonacciGenerator" required>
-          <button type="submit">Generate</button>
+      <form class="numberForFibonacciGenerator">
+          <input type="number" id="numberForFibonacciGenerator" value=3 placeholder="Enter the number" required>
+          <button type="submit" id="numberForFibonacciGeneratorButton">Generate</button>
         </form>
         <p></p>
         <p></p>
         <p></p>
-      </div>
+      </section>
 
       <section>
         <h1>Asynchronous JavaScript</h1>
@@ -65,6 +70,6 @@
     </main>
 
     <footer></footer>
-    <script async defer></script>
+    <script src="/scripts/app.js" async defer></script>
   </body>
 </html>
