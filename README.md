@@ -1,6 +1,12 @@
 # Vanilla JavaScript
 
-## Set of technical exercises to highlight Vanilla JavaScript skills
+Set of technical exercises to highlight Vanilla JavaScript skills
+
+## Tools, skills, frameworks
+
+JS, FETCH API, Bootstrap, HTML, CSS
+
+### Basic Vanilla JS Challenges
 
 ### Algorithmic Challenges
 
