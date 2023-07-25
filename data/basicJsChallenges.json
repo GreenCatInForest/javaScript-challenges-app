@@ -1,7 +1,7 @@
 [
   {
-    "title": "Challenge1",
-    "content": "Lorem ipsum dolor sit amet",
+    "title": "Starter JS Challenges",
+    "content": "Basic Vanilla JavaScript challenges, including variables, operators, conditionals, loops, functions etc.",
     "image": "./images/surfing-g130578680_1280.jpg",
     "projectLink": "path/to/projectLink",
     "projectGithubLink": "path/to/projectGithubLink"
