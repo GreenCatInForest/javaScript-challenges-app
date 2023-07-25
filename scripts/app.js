@@ -59,7 +59,6 @@ let cardConstructorFibonacciResult = () => {
 let handleNumberFromFibonacciGenerator = (event) => {
   event.preventDefault();
   cardArticleFibonacciResult.remove();
-  console.log("success");
   calculateFibonacci();
   cardConstructorFibonacciResult();
 };
