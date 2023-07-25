@@ -12,9 +12,19 @@ fetch("./data/basicJsChallenges.json")
 
 let displaybasicJSChallenges = (datas) => {
   datas.forEach((data) => {
-    let basicJsChallengesCard = document.createElement("div");
+    basicJsChallengesCard = document.createElement("div");
+    basicJsChallengesCard.setAttribute("id", "basicJsChallengesCard");
+
     basicJsChallengesCard.innerHTML = `
-        <img src="${data.image}"/>`;
+    <h4>${data.title}</h4>
+    <p>${data.content}</p>
+    <img src="${data.image}" alt="${data.title}"/>
+    <div>
+    <a href="${data.projectLink}">Explore</a>
+    <a href="${data.projectGithubLink}">Github</a>
+    </div>
+    
+    `;
     basicJsChallengesContainer.appendChild(basicJsChallengesCard);
   });
 };

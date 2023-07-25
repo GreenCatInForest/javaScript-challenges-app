@@ -45,13 +45,37 @@
 
 /* Basic JS Challenges */
 
-/* nav*/
+/* Cards Basic JS Challenges*/
 
-#navBasicJsChallenges {
+#basicJsChallengesContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: var(--sizeMd);
+  flex-wrap: wrap;
+}
+
+#basicJsChallengesCard {
+  padding: var(--sizeLg);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#basicJsChallengesCard {
+  padding: var(--sizeLg);
+}
+
+/* Fibonacci*/
+
+#fibonacciGenerator > * {
+  padding: var(--sizeXs);
+}
+
+.numberForFibonacciGenerator > * {
+  border: 1px solid black;
+}
+
+#resultFibonacci {
+  max-width: 80%;
 }
 
 /* FOR DESKTOP SCREENS */
@@ -98,6 +122,27 @@
     padding: var(--sizeMd);
   }
 
+  /* Cards Basic JS Challenges*/
+
+  #basicJsChallengesContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #basicJsChallengesCard {
+    max-width: 20%;
+    padding: var(--sizeLg);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #basicJsChallengesCard {
+    max-width: 30%;
+    padding: var(--sizeLg);
+  }
+
   /* Fibonacci Form */
 
   #fibonacciGenerator > * {
@@ -106,5 +151,9 @@
 
   .numberForFibonacciGenerator > * {
     border: 1px solid black;
+  }
+
+  #resultFibonacci {
+    max-width: 80%;
   }
 }
