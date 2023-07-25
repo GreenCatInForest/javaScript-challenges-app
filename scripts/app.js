@@ -2,7 +2,10 @@ let numberForFibonacci = document.querySelector("#numberForFibonacciGenerator");
 let handleNumberFromFibonacci = document.querySelector(
   "#numberForFibonacciGeneratorButton"
 );
-let resultFinonacci = document.querySelector("#resultFibonacci");
+let cardArticleFibonacciResult = document.createElement("article");
+document
+  .querySelector("#resultFibonacci")
+  .appendChild(cardArticleFibonacciResult);
 
 let calculateFibonacci = () => {
   array = [0, 1];
@@ -45,10 +48,20 @@ let calculateFibonacci = () => {
   }
 };
 
+let cardConstructorFibonacciResult = () => {
+  cardArticleFibonacciResult.innerHTML = `
+  <p>Here is your Fibonacci serie (${numberForFibonacci.value}): ${array}</p>`;
+  document
+    .querySelector("#resultFibonacci")
+    .appendChild(cardArticleFibonacciResult);
+};
+
 let handleNumberFromFibonacciGenerator = (event) => {
   event.preventDefault();
+  cardArticleFibonacciResult.remove();
   console.log("success");
   calculateFibonacci();
+  cardConstructorFibonacciResult();
 };
 
 handleNumberFromFibonacci.addEventListener(
