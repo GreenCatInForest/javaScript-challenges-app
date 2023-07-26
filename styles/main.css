@@ -39,6 +39,10 @@
   list-style: none;
 }
 
+.topNav ul li {
+  font-size: var(--sizeMd);
+}
+
 .topNavHidden li {
   display: none;
 }
