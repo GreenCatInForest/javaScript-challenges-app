@@ -64,6 +64,22 @@
   padding: var(--sizeLg);
 }
 
+/* Page Basic JS Challenges */
+
+.startersJsChallenges {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: var(--sizeMd);
+  height: 70%;
+  gap: var(--sizeMd);
+}
+
+.startersJsChallenges > * {
+  padding: var(--sizeMd);
+  border: 1px solid black;
+}
+
 /* Fibonacci*/
 
 #fibonacciGenerator > * {
@@ -141,6 +157,24 @@
   #basicJsChallengesCard {
     max-width: 30%;
     padding: var(--sizeLg);
+  }
+
+  /* Page Basic JS Challenges */
+
+  .startersJsChallenges {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 70%;
+    gap: var(--sizeMd);
+    align-items: center;
+  }
+
+  .startersJsChallenges > * {
+    width: 40%;
+    padding: var(--sizeMd);
+    border: 1px solid black;
   }
 
   /* Fibonacci Form */

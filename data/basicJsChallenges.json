@@ -3,7 +3,7 @@
     "title": "Starter JS Challenges",
     "content": "Basic Vanilla JavaScript challenges, including variables, operators, conditionals, loops, functions etc.",
     "image": "./images/surfing-g130578680_1280.jpg",
-    "projectLink": "path/to/projectLink",
+    "projectLink": "./challenges/startersJsChallenges.html",
     "projectGithubLink": "path/to/projectGithubLink"
   },
   {
