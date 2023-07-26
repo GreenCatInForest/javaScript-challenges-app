@@ -179,7 +179,7 @@
     padding: var(--sizeLg);
   }
 
-  /* Page Basic JS Challenges */
+  /* Page Starters Basic JS Challenges */
 
   .startersJsChallenges {
     display: flex;
@@ -195,6 +195,10 @@
     width: 40%;
     padding: var(--sizeLg);
     border: 1px solid black;
+  }
+
+  .startersJsChallengesHidden {
+    display: none;
   }
 
   /* Fibonacci Form */
