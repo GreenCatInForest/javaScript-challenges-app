@@ -72,12 +72,28 @@
   text-align: center;
   padding: var(--sizeMd);
   height: 70%;
-  gap: var(--sizeMd);
+  gap: var(--sizeLg);
 }
 
 .startersJsChallenges > * {
   padding: var(--sizeMd);
   border: 1px solid black;
+}
+
+.navStartersJsChallenges:hover {
+  background-image: linear-gradient(
+    to right,
+    #b8cbb8 0%,
+    #b8cbb8 0%,
+    #b465da 0%,
+    #cf6cc9 33%,
+    #ee609c 66%,
+    #ee609c 100%
+  );
+  transition: 3s ease;
+  box-shadow: -2px 30px 10px -20px rgba(0, 0, 0, 0.9);
+  font-size: larger;
+  text-transform: uppercase;
 }
 
 /* Fibonacci*/
@@ -175,21 +191,6 @@
     width: 40%;
     padding: var(--sizeLg);
     border: 1px solid black;
-  }
-
-  .startersJsChallenges section:hover {
-    background-image: linear-gradient(
-      to right,
-      #b8cbb8 0%,
-      #b8cbb8 0%,
-      #b465da 0%,
-      #cf6cc9 33%,
-      #ee609c 66%,
-      #ee609c 100%
-    );
-    transition: 2s ease;
-    box-shadow: -2px 30px 10px -20px rgba(0, 0, 0, 0.9);
-    /*-2px 100px 118px -45px*/
   }
 
   /* Fibonacci Form */
