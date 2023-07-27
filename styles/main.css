@@ -100,6 +100,14 @@
   text-transform: uppercase;
 }
 
+.startersJsChallengesHidden {
+  display: none;
+}
+
+.startersJsChallengesVisible {
+  display: block;
+}
+
 /* Fibonacci*/
 
 #fibonacciGenerator > * {
@@ -195,14 +203,6 @@
     width: 40%;
     padding: var(--sizeLg);
     border: 1px solid black;
-  }
-
-  .startersJsChallengesHidden {
-    display: none;
-  }
-
-  .startersJsChallengesVisible {
-    display: block;
   }
 
   /* Fibonacci Form */
