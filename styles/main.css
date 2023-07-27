@@ -201,6 +201,10 @@
     display: none;
   }
 
+  .startersJsChallengesVisible {
+    display: block;
+  }
+
   /* Fibonacci Form */
 
   #fibonacciGenerator > * {
