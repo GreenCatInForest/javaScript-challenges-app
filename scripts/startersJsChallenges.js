@@ -14,17 +14,6 @@ let showChallenge = (event) => {
   });
 };
 
-// let showChallenge = () => {
-//   if variablesJsDataTypes.classList.replace(
-//     "startersJsChallengesHidden",
-//     "startersJsChallengesVisible"
-//   );
-//   operatorsJs.classList.replace(
-//     "startersJsChallengesHidden",
-//     "startersJsChallengesVisible"
-//   );
-// };
-
 navVariablesJsDataTypes.addEventListener("click", showChallenge);
 navOperatorsJs.addEventListener("click", showChallenge);
 navConditionalsJs.addEventListener("click", showChallenge);
