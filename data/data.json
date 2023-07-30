@@ -1,24 +1,45 @@
 {
-    "components": {
-        "headerNavigation" : [
-            {
+  "components": {},
 
-                
-            }
-        ]
-    }
-
+  "challendes": [
     {
-        "title": "Starter JS Challenges",
-        "content": "Basic Vanilla JavaScript challenges, including variables, operators, conditionals, loops, functions",
-        "image": "./images/surfing-g130578680_1280.jpg",
-        "projectLink": "./challenges/startersJsChallenges.html",
-        "projectGithubLink": "path/to/projectGithubLink"
-      },
-
-
-
-
-
-
+      "basicJsChallenges": [
+        {
+          "title": "Starter JS Challenges",
+          "content": "Basic Vanilla JavaScript challenges, including variables, operators, conditionals, loops, functions",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "DOM Manupulation Challenges",
+          "content": "Login form with validation, Fetch API and display it on a webpage dynamically",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/domJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Array Challenges",
+          "content": "Array modifications, changing, sorting etc",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/arrayJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Starter JS Challenges",
+          "content": "Basic Vanilla JavaScript challenges, including variables, operators, conditionals, loops, functions etc.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Starter JS Challenges",
+          "content": "Basic Vanilla JavaScript challenges, including variables, operators, conditionals, loops, functions etc.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        }
+      ]
+    }
+  ]
 }
