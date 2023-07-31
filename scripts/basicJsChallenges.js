@@ -5,6 +5,7 @@ let basicJsChallengesContainer = document.querySelector(
 fetch("./data/data.json")
   .then((response) => response.json())
   .then((datas) => {
+    console.log(datas.challendes);
     let listBasicJsChallenges = datas.challendes.basicJsChallenges;
     listBasicJsChallenges.forEach((listBasicJsChallenge) => {
       basicJsChallengesCard = document.createElement("div");
