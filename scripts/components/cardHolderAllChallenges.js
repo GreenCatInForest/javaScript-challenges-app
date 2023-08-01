@@ -18,32 +18,20 @@ const displayCardChallengesContainer = (dataChallenges) => {
 
   matchedDataChallenges.forEach((matchedDataChallenge) => {
     matchedDataChallenge.allChallenges.forEach((challenge) => {
-      console.log(challenge.title);
+      const challengesContainerCard = document.createElement("div");
+      challengesContainerCard.setAttribute("id", "challengesContainerCard");
+
+      challengesContainerCard.innerHTML = `<h4>${challenge.title}</h4>
+        <p>${challenge.content}</p>
+        <img src="${challenge.image}" alt="${challenge.title}"/>
+        <div>
+        <a href="${challenge.projectLink}">Explore</a>
+        <a href="${challenge.projectGithubLink}">Github</a>
+        </div>`;
+
+      cardHolderChallengesContainers.forEach((cardHolderChallengesContainer) =>
+        cardHolderChallengesContainer.appendChild(challengesContainerCard)
+      );
     });
   });
 };
-
-// const challengesContainerCard = document.createElement("div");
-// challengesContainerCard.setAttribute("id", "challengesContainerCard");
-// challengesContainerCard.innerHTML = `<h4>${dataChallenge.title}</h4>
-// //         <p>${listBasicJsChallenge.content}</p>
-// //         <img src="${listBasicJsChallenge.image}" alt="${listBasicJsChallenge.title}"/>
-// //         <div>
-// //         <a href="${listBasicJsChallenge.projectLink}">Explore</a>
-// //         <a href="${listBasicJsChallenge.projectGithubLink}">Github</a>
-// //         </div>`;
-// cardHolderChallengesContainer.appendChild(challengesContainerCard);
-
-//     let listBasicJsChallenges = datas.challendes.basicJsChallenges;
-//     listBasicJsChallenges.forEach((listBasicJsChallenge) => {
-//       basicJsChallengesCard = document.createElement("div");
-//       basicJsChallengesCard.setAttribute("id", "basicJsChallengesCard");
-//       basicJsChallengesCard.innerHTML = `<h4>${listBasicJsChallenge.title}</h4>
-//         <p>${listBasicJsChallenge.content}</p>
-//         <img src="${listBasicJsChallenge.image}" alt="${listBasicJsChallenge.title}"/>
-//         <div>
-//         <a href="${listBasicJsChallenge.projectLink}">Explore</a>
-//         <a href="${listBasicJsChallenge.projectGithubLink}">Github</a>
-//         </div>`;
-//       basicJsChallengesContainer.appendChild(basicJsChallengesCard);
-//     });
