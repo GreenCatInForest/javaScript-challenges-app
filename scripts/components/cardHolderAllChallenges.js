@@ -19,7 +19,7 @@ const displayCardChallengesContainer = (dataChallenges) => {
   matchedDataChallenges.forEach((matchedDataChallenge) => {
     matchedDataChallenge.allChallenges.forEach((challenge) => {
       const challengesContainerCard = document.createElement("div");
-      challengesContainerCard.setAttribute("id", "challengesContainerCard");
+      challengesContainerCard.setAttribute("class", "challengesContainerCard");
 
       challengesContainerCard.innerHTML = `<h4>${challenge.title}</h4>
         <p>${challenge.content}</p>

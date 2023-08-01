@@ -47,25 +47,21 @@
   display: none;
 }
 
-/* Basic JS Challenges */
+/* JS Challenges */
 
-/* Cards Basic JS Challenges*/
+/*  JS Challenges Navigation*/
 
-#basicJsChallengesContainer {
+#cardHolderChallengesContainer {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
 
-#basicJsChallengesCard {
+.challengesContainerCard {
   padding: var(--sizeLg);
   display: flex;
   flex-direction: column;
   text-align: center;
-}
-
-#basicJsChallengesCard {
-  padding: var(--sizeLg);
 }
 
 /* Page Basic JS Challenges */
@@ -155,26 +151,19 @@
     display: none;
   }
 
-  /* Basic JS Challenges*/
+  /* JS Challenges*/
 
-  /* nav*/
-
-  #navBasicJsChallenges {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: var(--sizeMd);
-  }
+  /* nav */
 
   /* Cards Basic JS Challenges*/
 
-  #basicJsChallengesContainer {
+  .cardHolderChallengesContainer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
 
-  #basicJsChallengesCard {
+  .challengesContainerCard {
     max-width: 20%;
     padding: var(--sizeLg);
     display: flex;
@@ -182,7 +171,7 @@
     text-align: center;
   }
 
-  #basicJsChallengesCard {
+  .challengesContainerCard {
     max-width: 30%;
     padding: var(--sizeLg);
   }
