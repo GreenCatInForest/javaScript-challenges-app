@@ -1,9 +1,7 @@
 let cardHolderChallengesContainers = document.querySelectorAll(
   ".cardHolderChallengesContainer"
 );
-console.log(cardHolderChallengesContainers);
 const currentPageUrl = window.location.pathname;
-console.log(currentPageUrl);
 
 fetch("./data/data.json")
   .then((response) => response.json())
@@ -24,18 +22,6 @@ const displayCardChallengesContainer = (dataChallenges) => {
     });
   });
 };
-
-//   matchedDataChallenges.forEach((dataChallenge) => {
-//     console.log("+" + dataChallenge.name);
-//   });
-
-//   renderCardChallengesContainer(dataChallenge);
-// };
-
-// const renderCardChallengesContainer = (dataChallenge) => {
-//   cardHolderChallengesContainers.forEach((cardHolderChallengesContainer) => {
-//     console.log(cardHolderChallengesContainer);
-//     console.log(dataChallenge);
 
 // const challengesContainerCard = document.createElement("div");
 // challengesContainerCard.setAttribute("id", "challengesContainerCard");
