@@ -6,16 +6,13 @@ fetch("./data/data.json")
   .then((response) => response.json())
   .then((datas) => {
     dataChallenges = datas.challenges;
-    console.log(dataChallenges);
-    let displayListAllChallenges = () => {
-      dataChallenges.forEach((dataChallenge) => console.log(dataChallenge));
-    };
-    displayListAllChallenges();
-
-    // let loopListAllChallenges(listAllChallenges);
-    //     dataChallenges = datas.challendes; console.log(dataChallenges);
+    displayListAllChallenges(dataChallenges);
   })
   .catch((error) => console.error("Error fetching data:", error));
+
+let displayListAllChallenges = (dataChallenges) => {
+  dataChallenges.forEach((dataChallenge) => console.log(dataChallenge));
+};
 
 //     let listBasicJsChallenges = datas.challendes.basicJsChallenges;
 //     listBasicJsChallenges.forEach((listBasicJsChallenge) => {
