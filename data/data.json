@@ -3,7 +3,10 @@
 
   "challenges": [
     {
-      "basicJsChallenges": [
+      "name": "basicJsChallenges",
+      "pageLink": "./basicJsChallenges.html",
+
+      "allChallenges": [
         {
           "title": "Starter JS Challenges",
           "content": "Basic Vanilla JavaScript challenges, including variables, operators, conditionals, loops, functions",
@@ -42,7 +45,10 @@
       ]
     },
     {
-      "algorithmicChallenges": [
+      "name": "algorithmicChallenges",
+      "pageLink": "./algorithmicChallenges.html",
+
+      "allChallenges": [
         {
           "title": "Starter JS Challenges",
           "content": "Basic Vanilla JavaScript challenges, including variables, operators, conditionals, loops, functions etc.",
