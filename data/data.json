@@ -12,7 +12,259 @@
           "content": "Basic Vanilla JavaScript challenges, including variables, operators, conditionals, loops, functions",
           "image": "./images/surfing-g130578680_1280.jpg",
           "projectLink": "./challenges/startersJsChallenges.html",
-          "projectGithubLink": "path/to/projectGithubLink"
+          "projectGithubLink": "path/to/projectGithubLink",
+          "groupOfChallenges": [
+            {
+              "groupOfChallengesTitle": "Variables and Data Types",
+              "challenge": [
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                }
+              ]
+            },
+            {
+              "groupOfChallengesTitle": "Operators (Arithmetic, Comparison, Logical)",
+              "challenge": [
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                }
+              ]
+            },
+            {
+              "groupOfChallengesTitle": "Conditionals (if/else, switch)",
+              "challenge": [
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                }
+              ]
+            },
+            {
+              "groupOfChallengesTitle": "Loops (for, while)",
+              "challenge": [
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                }
+              ]
+            },
+            {
+              "groupOfChallengesTitle": "Functions",
+              "challenge": [
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                }
+              ]
+            }
+          ]
         },
         {
           "title": "DOM Manupulation Challenges",
