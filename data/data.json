@@ -68,13 +68,8 @@
               "groupOfChallengesTitle": "Operators (Arithmetic, Comparison, Logical)",
               "challenge": [
                 {
-                  "challengeTitle": "",
-                  "challengeDescription": "",
-                  "challengeContent": ""
-                },
-                {
-                  "challengeTitle": "",
-                  "challengeDescription": "",
+                  "challengeTitle": "Even or Odd",
+                  "challengeDescription": "Write a function to check if a given number is even or odd using the modulus operator.",
                   "challengeContent": ""
                 },
                 {
@@ -118,8 +113,8 @@
               "groupOfChallengesTitle": "Conditionals (if/else, switch)",
               "challenge": [
                 {
-                  "challengeTitle": "",
-                  "challengeDescription": "",
+                  "challengeTitle": "Weekday or Weekend",
+                  "challengeDescription": "Implement a function that takes a day of the week as input and returns a message based on whether it's a weekday or weekend",
                   "challengeContent": ""
                 },
                 {
@@ -168,8 +163,8 @@
               "groupOfChallengesTitle": "Loops (for, while)",
               "challenge": [
                 {
-                  "challengeTitle": "",
-                  "challengeDescription": "",
+                  "challengeTitle": "Calculate the factorial",
+                  "challengeDescription": "Create a function to calculate the factorial of a given number using a for loop.",
                   "challengeContent": ""
                 },
                 {
@@ -218,8 +213,8 @@
               "groupOfChallengesTitle": "Functions",
               "challenge": [
                 {
-                  "challengeTitle": "",
-                  "challengeDescription": "",
+                  "challengeTitle": "Arrow Function",
+                  "challengeDescription": " Write a function that takes two numbers as input and returns their product using an arrow function.",
                   "challengeContent": ""
                 },
                 {
