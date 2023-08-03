@@ -32,9 +32,9 @@ const createHeaderNavigation = () => {
             <li>Interactive Fibonacci Series Generator</li>
             <li>Find Missing Number</li>
           </ul></li>
-          <li><a href="#asynchronousJavaScript">Asynchronous JavaScript</a></li>
-          <li><a href="#errorHandling">Error Handling</a></li>
-          <li><a href="#functionalProgramming">Functional Programming</a></li>
+          <li><a href="/asynchronousChallenges.html">Asynchronous JavaScript</a></li>
+          <li><a href="/errorHandling.html">Error Handling</a></li>
+          <li><a href="/functionalProgramming.html">Functional Programming</a></li>
         </ul>`;
   headerNav.classList.add("topNav");
   header.appendChild(headerNav);
