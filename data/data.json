@@ -420,12 +420,19 @@
           "image": "./images/surfing-g130578680_1280.jpg",
           "projectLink": "./challenges/startersJsChallenges.html",
           "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Improve performance of a slow JS function",
+          "content": "Improve the performance of a slow JavaScript function by refactoring it and using more efficient data structures or algorithms",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
         }
       ]
     },
     {
       "name": "asynchronousChallenges",
-      "pageLink": "./algorithmicChallenges.html",
+      "pageLink": "./asynchronousChallenges.html",
 
       "allChallenges": [
         {
