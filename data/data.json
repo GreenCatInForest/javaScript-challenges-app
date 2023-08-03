@@ -263,10 +263,62 @@
         },
         {
           "title": "DOM Manupulation Challenges",
-          "content": "Login form with validation, Fetch API and display it on a webpage dynamically",
+          "content": "",
           "image": "./images/surfing-g130578680_1280.jpg",
           "projectLink": "./challenges/domJsChallenges.html",
-          "projectGithubLink": "path/to/projectGithubLink"
+          "projectGithubLink": "path/to/projectGithubLink",
+          "groupOfChallenges": [
+            {
+              "groupOfChallengesTitle": "DOM Manupulation",
+              "challenge": [
+                {
+                  "challengeTitle": "Login form with validation",
+                  "challengeDescription": "Login form with validation, Fetch API and display it on a webpage dynamically",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "Fetch data",
+                  "challengeDescription": "Write JavaScript code to fetch data from an API and display it on a webpage dynamically",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                }
+              ]
+            }
+          ]
         },
         {
           "title": "Array Challenges",
@@ -348,6 +400,34 @@
       "pageLink": "./algorithmicChallenges.html",
 
       "allChallenges": [
+        {
+          "title": "Starter JS Challenges",
+          "content": "Basic Vanilla JavaScript challenges, including variables, operators, conditionals, loops, functions etc.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Starter JS Challenges",
+          "content": "Basic Vanilla JavaScript challenges, including variables, operators, conditionals, loops, functions etc.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        }
+      ]
+    },
+    {
+      "name": "asynchronousChallenges",
+      "pageLink": "./algorithmicChallenges.html",
+
+      "allChallenges": [
+        {
+          "title": "Starter JS Challenges",
+          "content": "Basic Vanilla JavaScript challenges, including variables, operators, conditionals, loops, functions etc.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
         {
           "title": "Starter JS Challenges",
           "content": "Basic Vanilla JavaScript challenges, including variables, operators, conditionals, loops, functions etc.",
