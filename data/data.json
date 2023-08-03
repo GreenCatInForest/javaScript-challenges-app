@@ -408,8 +408,15 @@
           "projectGithubLink": "path/to/projectGithubLink"
         },
         {
-          "title": "Starter JS Challenges",
-          "content": "Basic Vanilla JavaScript challenges, including variables, operators, conditionals, loops, functions etc.",
+          "title": "FizzBuzz problem",
+          "content": "Solve the classic FizzBuzz problem: Write a function that prints numbers from 1 to n, but for multiples of 3, print Fizz, for multiples of 5, print Buzz, and for multiples of both 3 and 5, print FizzBuzz",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Two numbers add up to a specific target sum",
+          "content": "Given an array of integers, write an algorithm to find the two numbers that add up to a specific target sum. Optimize your solution for time complexity.",
           "image": "./images/surfing-g130578680_1280.jpg",
           "projectLink": "./challenges/startersJsChallenges.html",
           "projectGithubLink": "path/to/projectGithubLink"
@@ -422,15 +429,15 @@
 
       "allChallenges": [
         {
-          "title": "1",
-          "content": "1",
+          "title": "Asynchronous FETCH",
+          "content": "Write a function that simulates making a network request using Promises. Use this function to fetch data from an API and display it on the page once the data is received.",
           "image": "./images/surfing-g130578680_1280.jpg",
           "projectLink": "./challenges/startersJsChallenges.html",
           "projectGithubLink": "path/to/projectGithubLink"
         },
         {
-          "title": "2",
-          "content": "2",
+          "title": "Error handling for the asynchronous function",
+          "content": "Implement error handling for the asynchronous function to handle rejected promises gracefully.",
           "image": "./images/surfing-g130578680_1280.jpg",
           "projectLink": "./challenges/startersJsChallenges.html",
           "projectGithubLink": "path/to/projectGithubLink"
