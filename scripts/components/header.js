@@ -33,8 +33,8 @@ const createHeaderNavigation = () => {
             <li>Find Missing Number</li>
           </ul></li>
           <li><a href="/asynchronousChallenges.html">Asynchronous JavaScript</a></li>
-          <li><a href="/errorHandling.html">Error Handling</a></li>
-          <li><a href="/functionalProgramming.html">Functional Programming</a></li>
+          <li><a href="/errorHandlingChallenges.html">Error Handling</a></li>
+          <li><a href="/functionalProgrammingChallenges.html">Functional Programming</a></li>
         </ul>`;
   headerNav.classList.add("topNav");
   header.appendChild(headerNav);

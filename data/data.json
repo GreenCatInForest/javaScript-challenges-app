@@ -436,6 +436,48 @@
           "projectGithubLink": "path/to/projectGithubLink"
         }
       ]
+    },
+    {
+      "name": "errorHandlingChallenges",
+      "pageLink": "./errorHandlingChallenges.html",
+
+      "allChallenges": [
+        {
+          "title": "1",
+          "content": "1",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "2",
+          "content": "2",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        }
+      ]
+    },
+    {
+      "name": "functionalProgrammingChallenges",
+      "pageLink": "./functionalProgrammingChallenges.html",
+
+      "allChallenges": [
+        {
+          "title": "1",
+          "content": "1",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "2",
+          "content": "2",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        }
+      ]
     }
   ]
 }
