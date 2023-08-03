@@ -18,13 +18,13 @@
               "groupOfChallengesTitle": "Variables and Data Types",
               "challenge": [
                 {
-                  "challengeTitle": "",
-                  "challengeDescription": "",
+                  "challengeTitle": "Reverse a string",
+                  "challengeDescription": "Write a function to reverse a given string without using the built-in reverse() method",
                   "challengeContent": ""
                 },
                 {
-                  "challengeTitle": "",
-                  "challengeDescription": "",
+                  "challengeTitle": "The word with highest frequency",
+                  "challengeDescription": "Create a function that takes a sentence as input and returns the word with the highest frequency. If there are multiple words with the same highest frequency, return the one that appears first",
                   "challengeContent": ""
                 },
                 {
@@ -282,13 +282,13 @@
                   "challengeContent": ""
                 },
                 {
-                  "challengeTitle": "",
-                  "challengeDescription": "",
+                  "challengeTitle": "ToDo app",
+                  "challengeDescription": "Create a simple todo list application with HTML, CSS, and JavaScript. Users should be able to add, remove, and mark items as completed.",
                   "challengeContent": ""
                 },
                 {
-                  "challengeTitle": "",
-                  "challengeDescription": "",
+                  "challengeTitle": "Dark theme",
+                  "challengeDescription": "Implement a function to change the background color of a webpage every time a button is clicked",
                   "challengeContent": ""
                 },
                 {
@@ -341,23 +341,23 @@
                   "challengeContent": ""
                 },
                 {
-                  "challengeTitle": "",
-                  "challengeDescription": "",
+                  "challengeTitle": "Return sorted even numbers",
+                  "challengeDescription": "Implement a function that takes an array of numbers and returns a new array with only the even numbers sorted in ascending order.",
                   "challengeContent": ""
                 },
                 {
-                  "challengeTitle": "",
-                  "challengeDescription": "",
+                  "challengeTitle": "Comparing arrays",
+                  "challengeDescription": "Write a function that takes two arrays and returns true if they have at least one common element, otherwise return false.",
                   "challengeContent": ""
                 },
                 {
-                  "challengeTitle": "",
-                  "challengeDescription": "",
+                  "challengeTitle": "Filter",
+                  "challengeDescription": "Implement a higher-order function that filters an array based on a given condition",
                   "challengeContent": ""
                 },
                 {
-                  "challengeTitle": "",
-                  "challengeDescription": "",
+                  "challengeTitle": "Remove falsy values",
+                  "challengeDescription": "Create a function to remove all falsy values (false, null, 0, parenthesis, undefined, and NaN) from an array.",
                   "challengeContent": ""
                 },
                 {
@@ -401,8 +401,8 @@
 
       "allChallenges": [
         {
-          "title": "Starter JS Challenges",
-          "content": "Basic Vanilla JavaScript challenges, including variables, operators, conditionals, loops, functions etc.",
+          "title": "Fibonacci",
+          "content": "Implement a recursive function to find the nth number in the Fibonacci sequence",
           "image": "./images/surfing-g130578680_1280.jpg",
           "projectLink": "./challenges/startersJsChallenges.html",
           "projectGithubLink": "path/to/projectGithubLink"
@@ -417,6 +417,41 @@
         {
           "title": "Two numbers add up to a specific target sum",
           "content": "Given an array of integers, write an algorithm to find the two numbers that add up to a specific target sum. Optimize your solution for time complexity.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Improve performance of a slow JS function",
+          "content": "Improve the performance of a slow JavaScript function by refactoring it and using more efficient data structures or algorithms",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "The second highest number in an array",
+          "content": "Write a function to find the second highest number in an array of integers.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Improve performance of a slow JS function",
+          "content": "Improve the performance of a slow JavaScript function by refactoring it and using more efficient data structures or algorithms",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Improve performance of a slow JS function",
+          "content": "Improve the performance of a slow JavaScript function by refactoring it and using more efficient data structures or algorithms",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Improve performance of a slow JS function",
+          "content": "Improve the performance of a slow JavaScript function by refactoring it and using more efficient data structures or algorithms",
           "image": "./images/surfing-g130578680_1280.jpg",
           "projectLink": "./challenges/startersJsChallenges.html",
           "projectGithubLink": "path/to/projectGithubLink"
@@ -448,6 +483,27 @@
           "image": "./images/surfing-g130578680_1280.jpg",
           "projectLink": "./challenges/startersJsChallenges.html",
           "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "FETCH from different API",
+          "content": "Write an asynchronous function that fetches data from two different APIs simultaneously and returns the combined results.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Delayed Execution",
+          "content": "Write a function that prints Hello, World after a delay of 2 seconds using setTimeout",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Error handling for the asynchronous function",
+          "content": "Implement error handling for the asynchronous function to handle rejected promises gracefully.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
         }
       ]
     },
@@ -457,15 +513,43 @@
 
       "allChallenges": [
         {
-          "title": "1",
-          "content": "1",
+          "title": "Errors in JSON",
+          "content": "Create a function that reads data from a JSON file and handles any potential errors that may occur during the process.",
           "image": "./images/surfing-g130578680_1280.jpg",
           "projectLink": "./challenges/startersJsChallenges.html",
           "projectGithubLink": "path/to/projectGithubLink"
         },
         {
-          "title": "2",
-          "content": "2",
+          "title": "Negative numbers",
+          "content": "Implement a function that takes an array of numbers as input and throws an error if any of the numbers are negative",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Divide by Zero Error",
+          "content": "Write a function that takes two numbers as input and performs division. Handle the case when the second number is zero and throw an appropriate error.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Try-Catch Block",
+          "content": "Write a function that contains a try-catch block to handle potential errors when executing a piece of code",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Negative numbers",
+          "content": "Implement a function that takes an array of numbers as input and throws an error if any of the numbers are negative",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Negative numbers",
+          "content": "Implement a function that takes an array of numbers as input and throws an error if any of the numbers are negative",
           "image": "./images/surfing-g130578680_1280.jpg",
           "projectLink": "./challenges/startersJsChallenges.html",
           "projectGithubLink": "path/to/projectGithubLink"
@@ -478,15 +562,43 @@
 
       "allChallenges": [
         {
-          "title": "1",
-          "content": "1",
+          "title": "Recursion",
+          "content": "Write a recursive function to calculate the factorial of a given positive integer",
           "image": "./images/surfing-g130578680_1280.jpg",
           "projectLink": "./challenges/startersJsChallenges.html",
           "projectGithubLink": "path/to/projectGithubLink"
         },
         {
-          "title": "2",
-          "content": "2",
+          "title": "Uppercase",
+          "content": "Write a function that takes an array of strings and returns a new array with all strings converted to uppercase",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Map and Filter",
+          "content": "Write a function that takes an array of numbers, doubles each element using map, and filters out the even numbers using filter.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Reduce",
+          "content": "Write a function that takes an array of numbers and returns the sum of all elements using the reduce method",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Uppercase",
+          "content": "Write a function that takes an array of strings and returns a new array with all strings converted to uppercase",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Uppercase",
+          "content": "Write a function that takes an array of strings and returns a new array with all strings converted to uppercase",
           "image": "./images/surfing-g130578680_1280.jpg",
           "projectLink": "./challenges/startersJsChallenges.html",
           "projectGithubLink": "path/to/projectGithubLink"
