@@ -78,8 +78,8 @@
                   "challengeContent": ""
                 },
                 {
-                  "challengeTitle": "",
-                  "challengeDescription": "",
+                  "challengeTitle": "Is prime?",
+                  "challengeDescription": "Implement a function that checks if a given number is prime or not.",
                   "challengeContent": ""
                 },
                 {
@@ -273,7 +273,59 @@
           "content": "Array modifications, changing, sorting etc",
           "image": "./images/surfing-g130578680_1280.jpg",
           "projectLink": "./challenges/arrayJsChallenges.html",
-          "projectGithubLink": "path/to/projectGithubLink"
+          "projectGithubLink": "path/to/projectGithubLink",
+          "groupOfChallenges": [
+            {
+              "groupOfChallengesTitle": "Array modifications, changing, sorting etc",
+              "challenge": [
+                {
+                  "challengeTitle": "Maximum and minimum",
+                  "challengeDescription": "Given an array of integers, write a function to find the maximum and minimum elements in the array.",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "Remove duplicates",
+                  "challengeDescription": "Write a function to remove all duplicates from an array and return the modified array without changing the order of elements.",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "",
+                  "challengeDescription": "",
+                  "challengeContent": ""
+                }
+              ]
+            }
+          ]
         },
         {
           "title": "Starter JS Challenges",
