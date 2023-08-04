@@ -8,8 +8,8 @@
 
       "allChallenges": [
         {
-          "title": "Starter JS Challenges",
-          "content": "Basic Vanilla JavaScript challenges, including variables, operators, conditionals, loops, functions",
+          "title": "Basic: Variables and Data Types",
+          "content": "All about variables and data types",
           "image": "./images/surfing-g130578680_1280.jpg",
           "projectLink": "./challenges/startersJsChallenges.html",
           "projectGithubLink": "path/to/projectGithubLink",
@@ -136,7 +136,17 @@
                   "challengeContent": ""
                 }
               ]
-            },
+            }
+          ]
+        },
+
+        {
+          "title": "Basic: Operators",
+          "content": "Operators (Arithmetic, Comparison, Logical)",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink",
+          "groupOfChallenges": [
             {
               "groupOfChallengesTitle": "Operators (Arithmetic, Comparison, Logical)",
               "challenge": [
@@ -206,7 +216,16 @@
                   "challengeContent": ""
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "title": "Basic: Conditionals",
+          "content": "Conditionals (if/else, switch)",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink",
+          "groupOfChallenges": [
             {
               "groupOfChallengesTitle": "Conditionals (if/else, switch)",
               "challenge": [
@@ -321,7 +340,16 @@
                   "challengeContent": ""
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "title": "Basic: Loops",
+          "content": "Loops (for, while)",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink",
+          "groupOfChallenges": [
             {
               "groupOfChallengesTitle": "Loops (for, while)",
               "challenge": [
@@ -396,7 +424,16 @@
                   "challengeContent": ""
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "title": "Basic: Functions.",
+          "content": "Declaration, expression, arrow functions",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink",
+          "groupOfChallenges": [
             {
               "groupOfChallengesTitle": "Functions. Declaration, expression, arrow functions",
               "challenge": [
@@ -534,7 +571,7 @@
           ]
         },
         {
-          "title": "Array Challenges ",
+          "title": "Basic: Array Challenges",
           "content": "Arrays and Array methods (forEach, map, filter, reduce)",
           "image": "./images/surfing-g130578680_1280.jpg",
           "projectLink": "./challenges/arrayJsChallenges.html",
