@@ -18,8 +18,35 @@
               "groupOfChallengesTitle": "Variables and Data Types",
               "challenge": [
                 {
+                  "challengeTitle": "Assigning a values",
+                  "challengeDescription": "Create a variable without assigning a value and then assign a value later in the code.",
+                  "level": "basic",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "Concatenate a string with a number and observe the result.",
+                  "level": "basic",
+                  "challengeDescription": "Concatenate a string with a number and observe the result.",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "Is Array?",
+                  "challengeDescription": "Create a function that checks if a given value is an array or not. Implement a function to check if a variable is defined or null.",
+                  "level": "basic",
+                  "challengeContent": ""
+                },
+
+                {
+                  "challengeTitle": "Template literals",
+                  "challengeDescription": "Use template literals to construct a dynamic string with variables.",
+                  "level": "basic",
+                  "challengeContent": ""
+                },
+
+                {
                   "challengeTitle": "Reverse a string",
                   "challengeDescription": "Write a function to reverse a given string without using the built-in reverse() method",
+                  "level": "basic",
                   "challengeContent": ""
                 },
                 {
@@ -30,6 +57,7 @@
                 {
                   "challengeTitle": "Variable Swap",
                   "challengeDescription": "Write a function that takes two variables a and b and swaps their values without using a temporary variable.",
+                  "level": "basic",
                   "challengeContent": ""
                 },
                 {
@@ -39,27 +67,42 @@
                 },
                 {
                   "challengeTitle": "Difference between == and ===",
-                  "challengeDescription": "Compare two variables with different values and types using both == and === to see how they behave differently",
+                  "challengeDescription": "Compare two variables with different values and types using both == and === to see how they behave differently. Explore the difference between == and === when comparing objects and arrays.",
+                  "level": "basic",
                   "challengeContent": ""
                 },
                 {
                   "challengeTitle": "Variable converter",
                   "challengeDescription": "Write a function that converts a string containing a number to an actual number using the appropriate equality operator",
+                  "level": "basic",
                   "challengeContent": ""
                 },
                 {
                   "challengeTitle": "PI",
                   "challengeDescription": "Declare a constant variable for the value of pi and use it to calculate the circumference of a circle.",
+                  "level": "basic",
                   "challengeContent": ""
                 },
                 {
                   "challengeTitle": "Has a?",
                   "challengeDescription": "Write a function that checks if a string contains the letter 'a' using the includes() method or indexOf().",
+                  "level": "basic",
                   "challengeContent": ""
                 },
                 {
-                  "challengeTitle": "",
-                  "challengeDescription": "",
+                  "challengeTitle": "Decimal into binary",
+                  "challengeDescription": "Convert a decimal number to a binary representation.",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "Different data types of NaN",
+                  "challengeDescription": "Explore the different data types of NaN, undefined, null, and Infinity.",
+                  "level": "basic",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "Destructure an object",
+                  "challengeDescription": "Destructure an object and extract its properties into variables.",
                   "challengeContent": ""
                 }
               ]
@@ -67,6 +110,31 @@
             {
               "groupOfChallengesTitle": "Operators (Arithmetic, Comparison, Logical)",
               "challenge": [
+                {
+                  "challengeTitle": "Exponentiation",
+                  "challengeDescription": "Implement a function to perform exponentiation using the ** operator.",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "Positive or negative?",
+                  "challengeDescription": "Use the ternary operator to check if a number is positive or negative.",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "Manipulate binary values",
+                  "challengeDescription": "Use the bitwise operators (&, |, ^, <<, >>) to manipulate binary values. Implement a function that converts a decimal number to its binary representation using bitwise operations.",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "NOT operation",
+                  "challengeDescription": "Create a function that performs a logical NOT operation without using the ! operator.",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "If a property exists?",
+                  "challengeDescription": "Use the in operator to check if a property exists in an object.",
+                  "challengeContent": ""
+                },
                 {
                   "challengeTitle": "Even or Odd",
                   "challengeDescription": "Write a function to check if a given number is even or odd using the modulus operator.",
@@ -153,8 +221,73 @@
                   "challengeContent": ""
                 },
                 {
-                  "challengeTitle": "",
-                  "challengeDescription": "",
+                  "challengeTitle": "Check a given string",
+                  "challengeDescription": "Write a function that checks if a given string is apple, orange, banana.",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "&& and || operators",
+                  "challengeDescription": "Use the && and || operators to perform multiple condition checks.",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "Numbers into Grades",
+                  "challengeDescription": "Implement a function that assigns a grade (A, B, C, etc.) based on a numerical score.",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "Ascending order using conditional statements",
+                  "challengeDescription": "Create a function that sorts three numbers in ascending order using conditional statements.",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "Determine the time of day",
+                  "challengeDescription": "Implement a function to determine the time of day (morning, afternoon, evening) based on the current hour.",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "The larger",
+                  "challengeDescription": "Use the conditional (ternary) operator to find the larger of two numbers.",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "Checks if a given string contains the letter",
+                  "challengeDescription": "Write a function that checks if a given string contains the letter 'e' and 't' using a switch statement.",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "Type of a triangle",
+                  "challengeDescription": "Create a function that determines the type of a triangle (scalene, isosceles, equilateral) based on side lengths.",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "Type of a triangle",
+                  "challengeDescription": "Create a function that determines the type of a triangle (scalene, isosceles, equilateral) based on side lengths.",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "Type of a triangle",
+                  "challengeDescription": "Create a function that determines the type of a triangle (scalene, isosceles, equilateral) based on side lengths.",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "Type of a triangle",
+                  "challengeDescription": "Create a function that determines the type of a triangle (scalene, isosceles, equilateral) based on side lengths.",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "Type of a triangle",
+                  "challengeDescription": "Create a function that determines the type of a triangle (scalene, isosceles, equilateral) based on side lengths.",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "Type of a triangle",
+                  "challengeDescription": "Create a function that determines the type of a triangle (scalene, isosceles, equilateral) based on side lengths.",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "Type of a triangle",
+                  "challengeDescription": "Create a function that determines the type of a triangle (scalene, isosceles, equilateral) based on side lengths.",
                   "challengeContent": ""
                 }
               ]
@@ -188,13 +321,38 @@
                   "challengeContent": ""
                 },
                 {
-                  "challengeTitle": "",
-                  "challengeDescription": "",
+                  "challengeTitle": "Print the elements",
+                  "challengeDescription": "Implement a function that prints the elements of an array using a for loop. Create a function that prints a pattern of stars using nested for loops.",
                   "challengeContent": ""
                 },
                 {
-                  "challengeTitle": "",
-                  "challengeDescription": "",
+                  "challengeTitle": "Sum of all numbers from 1",
+                  "challengeDescription": "Write a function that calculates the sum of all numbers from 1 to a given number using a for loop.",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "Generate a password",
+                  "challengeDescription": "Write a function that generates a random password of a given length using a while loop and Math.random().",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "First prime number greater than a given number",
+                  "challengeDescription": "Implement a function that finds the first prime number greater than a given number using a for loop.",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "Key-value pairs",
+                  "challengeDescription": "Use a for loop to iterate through an object and print its key-value pairs.",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "The sum of digits",
+                  "challengeDescription": "Write a function that calculates the sum of digits in a given number using a while loop and % operator.",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "Skip multiples",
+                  "challengeDescription": "Create a function to print numbers from 1 to 100 but skip multiples of 5 using continue statement.",
                   "challengeContent": ""
                 },
                 {
@@ -233,13 +391,13 @@
                   "challengeContent": ""
                 },
                 {
-                  "challengeTitle": "",
-                  "challengeDescription": "",
+                  "challengeTitle": "Area of a circle",
+                  "challengeDescription": "Implement a function that calculates the area of a circle given its radius using an arrow function.",
                   "challengeContent": ""
                 },
                 {
-                  "challengeTitle": "",
-                  "challengeDescription": "",
+                  "challengeTitle": "Callback array function",
+                  "challengeDescription": "Write a function that takes an array and a callback function, and returns a new array after applying the callback to each element",
                   "challengeContent": ""
                 },
                 {
@@ -367,7 +525,7 @@
                 },
                 {
                   "challengeTitle": "Return sorted even numbers",
-                  "challengeDescription": "Implement a function that takes an array of numbers and returns a new array with only the even numbers sorted in ascending order.",
+                  "challengeDescription": "Implement a function that takes an array of numbers and returns a new array with only the even numbers sorted in ascending order using the sort() method.",
                   "challengeContent": ""
                 },
                 {
@@ -640,6 +798,99 @@
     {
       "name": "functionalProgrammingChallenges",
       "pageLink": "./functionalProgrammingChallenges.html",
+
+      "allChallenges": [
+        {
+          "title": "Recursion",
+          "content": "Write a recursive function to calculate the factorial of a given positive integer",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Uppercase",
+          "content": "Write a function that takes an array of strings and returns a new array with all strings converted to uppercase",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Map and Filter",
+          "content": "Write a function that takes an array of numbers, doubles each element using map, and filters out the even and the odd numbers using filter.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Reduce",
+          "content": "Write a function that takes an array of numbers and returns the sum of all elements using the reduce method",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Higher-Order Functions",
+          "content": "Write a higher-order function repeat(func, times) that takes a function func and a number times as arguments. The repeat function should call func times number of times.",
+          "example": "function printHello() {console.log(Hello!);} repeat(printHello, 3); Output: Hello! Hello! Hello!",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Sum of Squares",
+          "content": "Write a function that takes an array of numbers and returns the sum of the squares of all the elements.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Currying and Partial Application",
+          "content": "Write a function multiplyCurry(a) that demonstrates currying and returns a function b that takes another argument and returns the product of a and b.",
+          "example": "multiplyCurry(5)(3). Output: 15",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Sum of Squares",
+          "content": "Write a function that takes an array of numbers and returns the sum of the squares of all the elements.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Sum of Squares",
+          "content": "Write a function that takes an array of numbers and returns the sum of the squares of all the elements.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Sum of Squares",
+          "content": "Write a function that takes an array of numbers and returns the sum of the squares of all the elements.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Sum of Squares",
+          "content": "Write a function that takes an array of numbers and returns the sum of the squares of all the elements.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Sum of Squares",
+          "content": "Write a function that takes an array of numbers and returns the sum of the squares of all the elements.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        }
+      ]
+    },
+    {
+      "name": "portfolioChallenges",
+      "pageLink": "./portfolioChallenges.html",
 
       "allChallenges": [
         {

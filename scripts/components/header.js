@@ -35,6 +35,7 @@ const createHeaderNavigation = () => {
           <li><a href="/asynchronousChallenges.html">Asynchronous JavaScript</a></li>
           <li><a href="/errorHandlingChallenges.html">Error Handling</a></li>
           <li><a href="/functionalProgrammingChallenges.html">Functional Programming</a></li>
+          <li><a href="/portfolioChallenges.html">Portfolio Challenges</a></li>
         </ul>`;
   headerNav.classList.add("topNav");
   header.appendChild(headerNav);
