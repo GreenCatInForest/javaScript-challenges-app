@@ -51,7 +51,7 @@
                 },
                 {
                   "challengeTitle": "The word with highest frequency",
-                  "challengeDescription": "Create a function that takes a sentence as input and returns the word with the highest frequency. If there are multiple words with the same highest frequency, return the one that appears first",
+                  "challengeDescription": "Create a function that takes a sentence as input and returns the word with the highest frequency. If there are multiple words with the same highest frequency, return the one that appears first. Count the occurrences of each character in a string.",
                   "challengeContent": ""
                 },
                 {
@@ -545,7 +545,7 @@
               "challenge": [
                 {
                   "challengeTitle": "Maximum and minimum",
-                  "challengeDescription": "Given an array of integers, write a function to find the maximum and minimum elements in the array. Implement a function to find the second smallest element in an array.",
+                  "challengeDescription": "Given an array of integers, write a function to find the maximum and minimum elements in the array. Implement a function to find the second smallest element in an array. Find the second largest element in an array.",
                   "challengeContent": ""
                 },
                 {
@@ -622,7 +622,84 @@
           "content": "Objects and Object-oriented programming",
           "image": "./images/surfing-g130578680_1280.jpg",
           "projectLink": "./challenges/startersJsChallenges.html",
-          "projectGithubLink": "path/to/projectGithubLink"
+          "projectGithubLink": "path/to/projectGithubLink",
+          "groupOfChallenges": [
+            {
+              "groupOfChallengesTitle": "Objects and Object-oriented programming",
+              "challenge": [
+                {
+                  "challengeTitle": "Creating an objects",
+                  "challengeDescription": "Create an object representing a person with properties like name, age, and address. Access and update properties",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "Access to keys and values",
+                  "challengeDescription": "Use the Object.keys() method to get all keys of an object. Use the Object.values() method to get all values of an object.",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "Сalculate the area of a rectangle",
+                  "challengeDescription": "Create an object method to calculate the area of a rectangle.",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "Comparing arrays",
+                  "challengeDescription": "Write a function that takes two arrays and returns true if they have at least one common element, otherwise return false. Write a function to check if two arrays are equal. Create a function to find the intersection of two arrays. Implement a function to find the union of two arrays.",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "Filter",
+                  "challengeDescription": "Implement a higher-order function that filters an array based on a given condition",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "Remove falsy values",
+                  "challengeDescription": "Create a function to remove all falsy values (false, null, 0, parenthesis, undefined, and NaN) from an array.",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "Array Sum",
+                  "challengeDescription": "Write a function that takes an array of numbers and returns the sum of all the elements in the array.",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "Spread Operator Usage",
+                  "challengeDescription": "Write a function that takes three separate arrays of fruits and combines them into a single array using the spread operator.",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "Merge an arrays",
+                  "challengeDescription": "Implement a function to merge two sorted arrays into one sorted array.",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "Rotate an array",
+                  "challengeDescription": "Create a function to rotate an array by a given number of positions.",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "Count the occurrences of each character",
+                  "challengeDescription": "Create a function to count the occurrences of each character in a string. Implement a function to find the longest word in a sentence. Implement a function to find the first non-repeating character in a string.",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "All possible subsets",
+                  "challengeDescription": "Write a function to generate all possible subsets of an array.",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "Shuffle the elements of an array",
+                  "challengeDescription": "Write a function to shuffle the elements of an array randomly.",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "Merge an arrays",
+                  "challengeDescription": "Implement a function to merge two sorted arrays into one sorted array.",
+                  "challengeContent": ""
+                }
+              ]
+            }
+          ]
         },
         {
           "title": "Starter JS Challenges",
@@ -759,9 +836,37 @@
           "projectGithubLink": "path/to/projectGithubLink"
         },
         {
-          "title": "Parallel API Requests",
-          "content": "Write a function parallelAPIRequests(urls) that takes an array of API URLs and makes parallel requests to all the APIs. Return the combined results as an array when all requests are complete. ",
+          "title": "Calculator using callbacks",
+          "content": "Build a simple calculator using callbacks for asynchronous arithmetic operations. ",
           "example": "parallelAPIRequests([https://api.example.com/data1, https://api.example.com/data2, https://api.example.com/data3]). Output: [result1, result2, result3]",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Promise-based function. Async/await syntax.",
+          "content": "Convert a callback-based function into a promise-based function. Refactor a promise-based function to use async/await syntax.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Parallel API Requests",
+          "content": "Write a function that makes parallel requests to multiple APIs and returns the combined results when all requests are complete.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Parallel API Requests",
+          "content": "Write a function that makes parallel requests to multiple APIs and returns the combined results when all requests are complete.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Parallel API Requests",
+          "content": "Write a function that makes parallel requests to multiple APIs and returns the combined results when all requests are complete.",
           "image": "./images/surfing-g130578680_1280.jpg",
           "projectLink": "./challenges/startersJsChallenges.html",
           "projectGithubLink": "path/to/projectGithubLink"
@@ -817,8 +922,36 @@
           "projectGithubLink": "path/to/projectGithubLink"
         },
         {
-          "title": "Negative numbers",
-          "content": "Implement a function that takes an array of numbers as input and throws an error if any of the numbers are negative",
+          "title": "Rejected promise",
+          "content": "Create a function that returns a rejected promise with a custom error message.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Loading spinner",
+          "content": "Create a loading spinner using async functions and DOM manipulation.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Rejected promise",
+          "content": "Create a function that returns a rejected promise with a custom error message.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Rejected promise",
+          "content": "Create a function that returns a rejected promise with a custom error message.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Promise.allSettled",
+          "content": "Use Promise.allSettled to fetch data from multiple APIs and handle both resolved and rejected promises.",
           "image": "./images/surfing-g130578680_1280.jpg",
           "projectLink": "./challenges/startersJsChallenges.html",
           "projectGithubLink": "path/to/projectGithubLink"
