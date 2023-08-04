@@ -2,13 +2,25 @@ const fetchAllChallengesTable = document.querySelector(
   "#fetchAllChallengesTable"
 );
 
-let dataAllChallengesTable = () => {
+const getDataAllChallengesTable = () => {
   fetch("./data/data.json")
     .then((response) => response.json())
-    .then((data) => {
-      console.log(data);
+    .then((datas) => {
+      console.log(datas);
+      let mainChallengesArrayDatas = datas.challenges;
+      printAllChallengesTable(mainChallengesArrayDatas);
     })
     .catch((error) => console.error(error));
 };
 
-dataAllChallengesTable();
+const printAllChallengesTable = (mainChallengesArrayDatas) => {
+  console.log("Here are the main challenges:");
+  mainChallengesArrayDatas.forEach((mainChallengeArrayData) => {
+    console.log(mainChallengeArrayData.name);
+    let groupChallengesArrayDatas = mainChallengeArrayData.allChallenges;
+    console.log(groupChallengesArrayDatas);
+  });
+  //document.createElement
+};
+
+getDataAllChallengesTable();
