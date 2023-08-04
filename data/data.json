@@ -104,6 +104,36 @@
                   "challengeTitle": "Destructure an object",
                   "challengeDescription": "Destructure an object and extract its properties into variables.",
                   "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "Convert a string containing numbers to an array of integers",
+                  "challengeDescription": "Implement a function that converts a string containing numbers to an array of integers.",
+                  "level": "basic",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "Different data types of NaN",
+                  "challengeDescription": "Explore the different data types of NaN, undefined, null, and Infinity.",
+                  "level": "basic",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "Different data types of NaN",
+                  "challengeDescription": "Explore the different data types of NaN, undefined, null, and Infinity.",
+                  "level": "basic",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "Different data types of NaN",
+                  "challengeDescription": "Explore the different data types of NaN, undefined, null, and Infinity.",
+                  "level": "basic",
+                  "challengeContent": ""
+                },
+                {
+                  "challengeTitle": "Different data types of NaN",
+                  "challengeDescription": "Explore the different data types of NaN, undefined, null, and Infinity.",
+                  "level": "basic",
+                  "challengeContent": ""
                 }
               ]
             },
@@ -356,8 +386,8 @@
                   "challengeContent": ""
                 },
                 {
-                  "challengeTitle": "",
-                  "challengeDescription": "",
+                  "challengeTitle": "Dynamic table",
+                  "challengeDescription": "Implement a dynamic table that displays data from an array using a for loop and nested loops for rows and columns.",
                   "challengeContent": ""
                 },
                 {
@@ -391,8 +421,8 @@
                   "challengeContent": ""
                 },
                 {
-                  "challengeTitle": "Area of a circle",
-                  "challengeDescription": "Implement a function that calculates the area of a circle given its radius using an arrow function.",
+                  "challengeTitle": "Area of various shapes (circle, rectangle, triangle)",
+                  "challengeDescription": "Implement a function that calculates the area of a circle given its radius using an arrow function. Create a function that calculates the area of various shapes (circle, rectangle, triangle) based on user input.",
                   "challengeContent": ""
                 },
                 {
@@ -466,7 +496,7 @@
                 },
                 {
                   "challengeTitle": "Real-Time Chat Application",
-                  "challengeDescription": "Build a real-time chat application using WebSocket or other asynchronous techniques for instant messaging. Users should be able to send and receive messages in real-time without the need for manual page refresh.",
+                  "challengeDescription": "Build a real-time chat application using WebSockets or Firebase or other asynchronous techniques for instant messaging. Users should be able to send and receive messages in real-time without the need for manual page refresh.",
                   "challengeContent": ""
                 },
                 {
@@ -574,8 +604,8 @@
                   "challengeContent": ""
                 },
                 {
-                  "challengeTitle": "Merge an arrays",
-                  "challengeDescription": "Implement a function to merge two sorted arrays into one sorted array.",
+                  "challengeTitle": "Shuffle the elements of an array",
+                  "challengeDescription": "Write a function to shuffle the elements of an array randomly.",
                   "challengeContent": ""
                 },
                 {
@@ -894,87 +924,290 @@
 
       "allChallenges": [
         {
-          "title": "Recursion",
-          "content": "Write a recursive function to calculate the factorial of a given positive integer",
+          "title": "User profile card",
+          "content": "Build a login system that checks if the username and password match predefined values using logical operators. Implement a toggle button that toggles the visibility of a password input field. Create a dynamic user profile card that displays the user's name, age, and favorite color. Implement a form validator that checks if the user's input is valid (e.g., email, phone number, password complexity). Implement a login form with different user roles (admin, user) that displays different content based on the user's role.",
           "image": "./images/surfing-g130578680_1280.jpg",
           "projectLink": "./challenges/startersJsChallenges.html",
           "projectGithubLink": "path/to/projectGithubLink"
         },
         {
-          "title": "Uppercase",
-          "content": "Write a function that takes an array of strings and returns a new array with all strings converted to uppercase",
+          "title": "Temperature converter",
+          "content": "Build a temperature converter that converts Celsius to Fahrenheit and vice versa.",
           "image": "./images/surfing-g130578680_1280.jpg",
           "projectLink": "./challenges/startersJsChallenges.html",
           "projectGithubLink": "path/to/projectGithubLink"
         },
         {
-          "title": "Map and Filter",
-          "content": "Write a function that takes an array of numbers, doubles each element using map, and filters out the even and the odd numbers using filter.",
+          "title": "Shopping cart",
+          "content": "Implement a shopping cart with product names, prices, and quantities. Calculate and display the total cost. Create a dynamic shopping cart that updates the total cost automatically when the quantity or price of a product changes.",
           "image": "./images/surfing-g130578680_1280.jpg",
           "projectLink": "./challenges/startersJsChallenges.html",
           "projectGithubLink": "path/to/projectGithubLink"
         },
         {
-          "title": "Reduce",
-          "content": "Write a function that takes an array of numbers and returns the sum of all elements using the reduce method",
+          "title": "Countdown timer",
+          "content": "Create a countdown timer that allows the user to set a target date and time.",
           "image": "./images/surfing-g130578680_1280.jpg",
           "projectLink": "./challenges/startersJsChallenges.html",
           "projectGithubLink": "path/to/projectGithubLink"
         },
         {
-          "title": "Higher-Order Functions",
-          "content": "Write a higher-order function repeat(func, times) that takes a function func and a number times as arguments. The repeat function should call func times number of times.",
-          "example": "function printHello() {console.log(Hello!);} repeat(printHello, 3); Output: Hello! Hello! Hello!",
+          "title": "Currency converter",
+          "content": "Build a currency converter that converts between different currencies using real-time exchange rates from an API.",
+          "example": "",
           "image": "./images/surfing-g130578680_1280.jpg",
           "projectLink": "./challenges/startersJsChallenges.html",
           "projectGithubLink": "path/to/projectGithubLink"
         },
         {
-          "title": "Sum of Squares",
-          "content": "Write a function that takes an array of numbers and returns the sum of the squares of all the elements.",
+          "title": "Quiz game",
+          "content": "Create a quiz game with multiple-choice questions and display the score at the end and a message. Build a quiz app that provides different difficulty levels and adjusts the number of questions based on the user's choice. timer that counts down as the user answers questions using a for loop and setInterval(). ",
           "image": "./images/surfing-g130578680_1280.jpg",
           "projectLink": "./challenges/startersJsChallenges.html",
           "projectGithubLink": "path/to/projectGithubLink"
         },
         {
-          "title": "Currying and Partial Application",
-          "content": "Write a function multiplyCurry(a) that demonstrates currying and returns a function b that takes another argument and returns the product of a and b.",
+          "title": "Weather app",
+          "content": "Build a weather app that fetches real-time weather data for a specified location using a weather API. Create a temperature sensor app that warns the user if the temperature goes above a predefined threshold.",
           "example": "multiplyCurry(5)(3). Output: 15",
           "image": "./images/surfing-g130578680_1280.jpg",
           "projectLink": "./challenges/startersJsChallenges.html",
           "projectGithubLink": "path/to/projectGithubLink"
         },
         {
-          "title": "Sum of Squares",
-          "content": "Write a function that takes an array of numbers and returns the sum of the squares of all the elements.",
+          "title": "BMI (Body Mass Index) calculator ",
+          "content": "Implement a BMI (Body Mass Index) calculator that takes height and weight inputs and provides the BMI category.",
           "image": "./images/surfing-g130578680_1280.jpg",
           "projectLink": "./challenges/startersJsChallenges.html",
           "projectGithubLink": "path/to/projectGithubLink"
         },
         {
-          "title": "Sum of Squares",
-          "content": "Write a function that takes an array of numbers and returns the sum of the squares of all the elements.",
+          "title": "Calculator",
+          "content": "Build a calculator app with basic arithmetic operations (addition, subtraction, multiplication, division). Build a dynamic calculator app that allows users to chain multiple operations together (e.g., 2 + 3 * 4) and follows the order of operations (BODMAS)",
           "image": "./images/surfing-g130578680_1280.jpg",
           "projectLink": "./challenges/startersJsChallenges.html",
           "projectGithubLink": "path/to/projectGithubLink"
         },
         {
-          "title": "Sum of Squares",
-          "content": "Write a function that takes an array of numbers and returns the sum of the squares of all the elements.",
+          "title": "Subscribe form",
+          "content": "Build a subscribe form. Build a dynamic form that displays additional fields based on the user's selections (e.g., country-specific address fields).",
           "image": "./images/surfing-g130578680_1280.jpg",
           "projectLink": "./challenges/startersJsChallenges.html",
           "projectGithubLink": "path/to/projectGithubLink"
         },
         {
-          "title": "Sum of Squares",
-          "content": "Write a function that takes an array of numbers and returns the sum of the squares of all the elements.",
+          "title": "Guess the Number game",
+          "content": "Create a Guess the Number game where the user has to guess a randomly generated number within a range.",
           "image": "./images/surfing-g130578680_1280.jpg",
           "projectLink": "./challenges/startersJsChallenges.html",
           "projectGithubLink": "path/to/projectGithubLink"
         },
         {
-          "title": "Sum of Squares",
-          "content": "Write a function that takes an array of numbers and returns the sum of the squares of all the elements.",
+          "title": "Color-changing button",
+          "content": "Implement a color-changing button that changes its color randomly on each click. Implement a function that generates a random color hex code and applies it as the background color of a div.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Rock-paper-scissors",
+          "content": "Implement a rock-paper-scissors game that takes user input and displays the result using comparison operators.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Car rental app",
+          "content": "Build a car rental app that calculates the total cost based on the number of rental days and optional add-ons.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Ticket booking system",
+          "content": "Build a ticket booking system with different ticket types (e.g., regular, premium, VIP) that calculates the total cost.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Guess a randomly generated word",
+          "content": "Implement a game where the user has to guess a randomly generated word and provide feedback if it's correct or not. Build a Hangman game that allows the user to guess a word letter by letter using a while loop.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Countdown timer",
+          "content": "Create a countdown timer that displays different messages based on the time remaining (e.g., Almost there, Time's up!).",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Traffic light simulator",
+          "content": "Implement a traffic light simulator that changes colors based on predefined time intervals.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Dynamic slideshow",
+          "content": "Create a dynamic slideshow that automatically transitions between images using a for loop.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "A progress bar",
+          "content": "Implement a progress bar that updates as the user fills out a multi-step form using a while loop.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Calendar",
+          "content": "Build a calendar app that highlights the current date and displays events for each day using nested loops. Build a dynamic calendar that highlights weekends and holidays using a while loop and date functions.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Contact form",
+          "content": "Build a contact form with reusable validation functions for email, phone number, and message inputs.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Generates a random password",
+          "content": "Create a function that generates a random password with customizable length and complexity.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Random Quote Generator",
+          "content": "Build a Random Quote Generator app that fetches quotes from an API and displays them using async/await functions.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Validate credit card numbers, phone numbers, dates",
+          "content": "Implement a function that validates credit card numbers based on their formats and checksums. Create a function that validates and formats a phone number in a specific format (e.g., +1 (123) 456-7890). Create a function that validates and formats a date in a specific format (e.g., MM/DD/YYYY).",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Anagram checker, palindrome checker, Word Search Game",
+          "content": "Create a function to check if a given string is a palindrome or an anagram of another string (uses the same characters but rearranged). Create a Word Search game where users have to find words in a grid of letters using nested loops.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Magic 8-Ball app",
+          "content": "Implement a Magic 8-Ball app that provides random answers to yes-or-no questions using a switch statement.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Tic-Tac-Toe",
+          "content": "Build a dynamic Tic-Tac-Toe game with AI that uses if/else statements to determine the next move.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Infinite Scroll feature",
+          "content": "Build a dynamic Infinite Scroll feature that loads more content as the user scrolls using a while loop and event listeners.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "E-commerce product gallery",
+          "content": "Create an e-commerce product gallery where users can view a list of products with images, names, prices, and ratings. Implement filters to allow users to sort and search for specific products based on various criteria.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Virtual Art Gallery",
+          "content": "Develop a virtual art gallery where users can explore and interact with famous artworks. Allow users to click on paintings for detailed information and a zoomed-in view.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Interactive Storytelling",
+          "content": "Create an interactive storytelling experience where users can make choices that affect the outcome of the story. Implement branching narratives and engaging plot twists.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Virtual Pet",
+          "content": "Design a virtual pet simulation where users can adopt and take care of virtual pets. Implement features like feeding, playing, and monitoring their health.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Travel Planner",
+          "content": "Develop a travel planner app that helps users plan their trips. Allow users to input their destinations, travel dates, and preferences, and provide them with a personalized itinerary.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Language Learning Game",
+          "content": "Create a language learning game where users can practice vocabulary and grammar in a fun and interactive way. Include quizzes, word associations, and pronunciation exercises.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Escape Room Game",
+          "content": "Design a virtual escape room game where users must solve puzzles and riddles to find their way out of a virtual room.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Time Management Tool",
+          "content": "Develop a time management tool that helps users track and manage their daily tasks, set reminders, and visualize their productivity.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Escape Room Game",
+          "content": "Design a virtual escape room game where users must solve puzzles and riddles to find their way out of a virtual room.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Escape Room Game",
+          "content": "Design a virtual escape room game where users must solve puzzles and riddles to find their way out of a virtual room.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Escape Room Game",
+          "content": "Design a virtual escape room game where users must solve puzzles and riddles to find their way out of a virtual room.",
+          "image": "./images/surfing-g130578680_1280.jpg",
+          "projectLink": "./challenges/startersJsChallenges.html",
+          "projectGithubLink": "path/to/projectGithubLink"
+        },
+        {
+          "title": "Escape Room Game",
+          "content": "Design a virtual escape room game where users must solve puzzles and riddles to find their way out of a virtual room.",
           "image": "./images/surfing-g130578680_1280.jpg",
           "projectLink": "./challenges/startersJsChallenges.html",
           "projectGithubLink": "path/to/projectGithubLink"
