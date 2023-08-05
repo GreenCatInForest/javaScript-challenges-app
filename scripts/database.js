@@ -15,10 +15,18 @@ const getDataAllChallengesTable = () => {
 
 const printAllChallengesTable = (mainChallengesArrayDatas) => {
   console.log("Here are the main challenges:");
+
   mainChallengesArrayDatas.forEach((mainChallengeArrayData) => {
     console.log(mainChallengeArrayData.name);
+    console.log(mainChallengeArrayData.allChallenges);
+
     let groupChallengesArrayDatas = mainChallengeArrayData.allChallenges;
     console.log(groupChallengesArrayDatas);
+
+    console.log("Here are the groups of challenges:");
+    groupChallengesArrayDatas.forEach((groupChallengesArrayData) => {
+      console.log(groupChallengesArrayData);
+    });
   });
   //document.createElement
 };

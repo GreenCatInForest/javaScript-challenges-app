@@ -13,129 +13,124 @@
           "image": "./images/surfing-g130578680_1280.jpg",
           "projectLink": "./challenges/startersJsChallenges.html",
           "projectGithubLink": "path/to/projectGithubLink",
-          "groupOfChallenges": [
+          "challenge": [
             {
-              "groupOfChallengesTitle": "Variables and Data Types",
-              "challenge": [
-                {
-                  "challengeTitle": "Assigning a values",
-                  "challengeDescription": "Create a variable without assigning a value and then assign a value later in the code.",
-                  "level": "basic",
-                  "challengeContent": ""
-                },
-                {
-                  "challengeTitle": "Concatenate a string with a number and observe the result.",
-                  "level": "basic",
-                  "challengeDescription": "Concatenate a string with a number and observe the result.",
-                  "challengeContent": ""
-                },
-                {
-                  "challengeTitle": "Is Array?",
-                  "challengeDescription": "Create a function that checks if a given value is an array or not. Implement a function to check if a variable is defined or null.",
-                  "level": "basic",
-                  "challengeContent": ""
-                },
+              "challengeTitle": "Assigning a values",
+              "challengeDescription": "Create a variable without assigning a value and then assign a value later in the code.",
+              "level": "basic",
+              "challengeContent": ""
+            },
+            {
+              "challengeTitle": "Concatenate a string with a number and observe the result.",
+              "level": "basic",
+              "challengeDescription": "Concatenate a string with a number and observe the result.",
+              "challengeContent": ""
+            },
+            {
+              "challengeTitle": "Is Array?",
+              "challengeDescription": "Create a function that checks if a given value is an array or not. Implement a function to check if a variable is defined or null.",
+              "level": "basic",
+              "challengeContent": ""
+            },
 
-                {
-                  "challengeTitle": "Template literals",
-                  "challengeDescription": "Use template literals to construct a dynamic string with variables.",
-                  "level": "basic",
-                  "challengeContent": ""
-                },
+            {
+              "challengeTitle": "Template literals",
+              "challengeDescription": "Use template literals to construct a dynamic string with variables.",
+              "level": "basic",
+              "challengeContent": ""
+            },
 
-                {
-                  "challengeTitle": "Reverse a string",
-                  "challengeDescription": "Write a function to reverse a given string without using the built-in reverse() method",
-                  "level": "basic",
-                  "challengeContent": ""
-                },
-                {
-                  "challengeTitle": "The word with highest frequency",
-                  "challengeDescription": "Create a function that takes a sentence as input and returns the word with the highest frequency. If there are multiple words with the same highest frequency, return the one that appears first. Count the occurrences of each character in a string.",
-                  "challengeContent": ""
-                },
-                {
-                  "challengeTitle": "Variable Swap",
-                  "challengeDescription": "Write a function that takes two variables a and b and swaps their values without using a temporary variable.",
-                  "level": "basic",
-                  "challengeContent": ""
-                },
-                {
-                  "challengeTitle": "Check Leap Year",
-                  "challengeDescription": "Write a function that takes a year as input and returns true if it's a leap year, otherwise false. A leap year is divisible by 4, but not by 100, unless it is divisible by 400.",
-                  "challengeContent": ""
-                },
-                {
-                  "challengeTitle": "Difference between == and ===",
-                  "challengeDescription": "Compare two variables with different values and types using both == and === to see how they behave differently. Explore the difference between == and === when comparing objects and arrays.",
-                  "level": "basic",
-                  "challengeContent": ""
-                },
-                {
-                  "challengeTitle": "Variable converter",
-                  "challengeDescription": "Write a function that converts a string containing a number to an actual number using the appropriate equality operator",
-                  "level": "basic",
-                  "challengeContent": ""
-                },
-                {
-                  "challengeTitle": "PI",
-                  "challengeDescription": "Declare a constant variable for the value of pi and use it to calculate the circumference of a circle.",
-                  "level": "basic",
-                  "challengeContent": ""
-                },
-                {
-                  "challengeTitle": "Has a?",
-                  "challengeDescription": "Write a function that checks if a string contains the letter 'a' using the includes() method or indexOf().",
-                  "level": "basic",
-                  "challengeContent": ""
-                },
-                {
-                  "challengeTitle": "Decimal into binary",
-                  "challengeDescription": "Convert a decimal number to a binary representation.",
-                  "challengeContent": ""
-                },
-                {
-                  "challengeTitle": "Different data types of NaN",
-                  "challengeDescription": "Explore the different data types of NaN, undefined, null, and Infinity.",
-                  "level": "basic",
-                  "challengeContent": ""
-                },
-                {
-                  "challengeTitle": "Destructure an object",
-                  "challengeDescription": "Destructure an object and extract its properties into variables.",
-                  "challengeContent": ""
-                },
-                {
-                  "challengeTitle": "Convert a string containing numbers to an array of integers",
-                  "challengeDescription": "Implement a function that converts a string containing numbers to an array of integers.",
-                  "level": "basic",
-                  "challengeContent": ""
-                },
-                {
-                  "challengeTitle": "Different data types of NaN",
-                  "challengeDescription": "Explore the different data types of NaN, undefined, null, and Infinity.",
-                  "level": "basic",
-                  "challengeContent": ""
-                },
-                {
-                  "challengeTitle": "Different data types of NaN",
-                  "challengeDescription": "Explore the different data types of NaN, undefined, null, and Infinity.",
-                  "level": "basic",
-                  "challengeContent": ""
-                },
-                {
-                  "challengeTitle": "Different data types of NaN",
-                  "challengeDescription": "Explore the different data types of NaN, undefined, null, and Infinity.",
-                  "level": "basic",
-                  "challengeContent": ""
-                },
-                {
-                  "challengeTitle": "Different data types of NaN",
-                  "challengeDescription": "Explore the different data types of NaN, undefined, null, and Infinity.",
-                  "level": "basic",
-                  "challengeContent": ""
-                }
-              ]
+            {
+              "challengeTitle": "Reverse a string",
+              "challengeDescription": "Write a function to reverse a given string without using the built-in reverse() method",
+              "level": "basic",
+              "challengeContent": ""
+            },
+            {
+              "challengeTitle": "The word with highest frequency",
+              "challengeDescription": "Create a function that takes a sentence as input and returns the word with the highest frequency. If there are multiple words with the same highest frequency, return the one that appears first. Count the occurrences of each character in a string.",
+              "challengeContent": ""
+            },
+            {
+              "challengeTitle": "Variable Swap",
+              "challengeDescription": "Write a function that takes two variables a and b and swaps their values without using a temporary variable.",
+              "level": "basic",
+              "challengeContent": ""
+            },
+            {
+              "challengeTitle": "Check Leap Year",
+              "challengeDescription": "Write a function that takes a year as input and returns true if it's a leap year, otherwise false. A leap year is divisible by 4, but not by 100, unless it is divisible by 400.",
+              "challengeContent": ""
+            },
+            {
+              "challengeTitle": "Difference between == and ===",
+              "challengeDescription": "Compare two variables with different values and types using both == and === to see how they behave differently. Explore the difference between == and === when comparing objects and arrays.",
+              "level": "basic",
+              "challengeContent": ""
+            },
+            {
+              "challengeTitle": "Variable converter",
+              "challengeDescription": "Write a function that converts a string containing a number to an actual number using the appropriate equality operator",
+              "level": "basic",
+              "challengeContent": ""
+            },
+            {
+              "challengeTitle": "PI",
+              "challengeDescription": "Declare a constant variable for the value of pi and use it to calculate the circumference of a circle.",
+              "level": "basic",
+              "challengeContent": ""
+            },
+            {
+              "challengeTitle": "Has a?",
+              "challengeDescription": "Write a function that checks if a string contains the letter 'a' using the includes() method or indexOf().",
+              "level": "basic",
+              "challengeContent": ""
+            },
+            {
+              "challengeTitle": "Decimal into binary",
+              "challengeDescription": "Convert a decimal number to a binary representation.",
+              "challengeContent": ""
+            },
+            {
+              "challengeTitle": "Different data types of NaN",
+              "challengeDescription": "Explore the different data types of NaN, undefined, null, and Infinity.",
+              "level": "basic",
+              "challengeContent": ""
+            },
+            {
+              "challengeTitle": "Destructure an object",
+              "challengeDescription": "Destructure an object and extract its properties into variables.",
+              "challengeContent": ""
+            },
+            {
+              "challengeTitle": "Convert a string containing numbers to an array of integers",
+              "challengeDescription": "Implement a function that converts a string containing numbers to an array of integers.",
+              "level": "basic",
+              "challengeContent": ""
+            },
+            {
+              "challengeTitle": "Different data types of NaN",
+              "challengeDescription": "Explore the different data types of NaN, undefined, null, and Infinity.",
+              "level": "basic",
+              "challengeContent": ""
+            },
+            {
+              "challengeTitle": "Different data types of NaN",
+              "challengeDescription": "Explore the different data types of NaN, undefined, null, and Infinity.",
+              "level": "basic",
+              "challengeContent": ""
+            },
+            {
+              "challengeTitle": "Different data types of NaN",
+              "challengeDescription": "Explore the different data types of NaN, undefined, null, and Infinity.",
+              "level": "basic",
+              "challengeContent": ""
+            },
+            {
+              "challengeTitle": "Different data types of NaN",
+              "challengeDescription": "Explore the different data types of NaN, undefined, null, and Infinity.",
+              "level": "basic",
+              "challengeContent": ""
             }
           ]
         },
