@@ -25,7 +25,14 @@ const printAllChallengesTable = (mainChallengesArrayDatas) => {
 
     console.log("Here are the groups of challenges:");
     groupChallengesArrayDatas.forEach((groupChallengesArrayData) => {
-      console.log(groupChallengesArrayData);
+      console.log(groupChallengesArrayData.title, groupChallengesArrayData);
+      let listParticularChallenges = groupChallengesArrayData.challenge;
+
+      if (listParticularChallenges) {
+        listParticularChallenges.forEach((listParticularChallenge) => {
+          console.log(listParticularChallenge.challengeTitle);
+        });
+      }
     });
   });
   //document.createElement
