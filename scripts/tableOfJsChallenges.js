@@ -14,14 +14,35 @@ const getDataAllChallengesTable = () => {
 };
 const printAllChallengesTable = (mainChallengesArrayDatas) => {
   let table = document.createElement("table");
-  console.log(table);
 
   mainChallengesArrayDatas.forEach((mainChallengeArrayData) => {
+    // console.log(mainChallengeArrayData);
+
+    // Table Header structure
+
     let tableChallengesHeader = mainChallengeArrayData.name;
     let tableHead = document.createElement("thead");
-    tableHead.innerHTML = `${tableChallengesHeader}`;
+    let tableHeadRow = document.createElement("tr");
+    let tableHeadCell = document.createElement("td");
+
+    tableHeadRow.appendChild(tableHeadCell);
+    tableHead.appendChild(tableHeadRow);
     table.appendChild(tableHead);
-    console.log(mainChallengeArrayData);
+
+    // Table Inner Block structure
+    let tableChallengesBody = document.createElement("tbody");
+    let tableRow = document.createElement("tr");
+    let tableCell = document.createElement("td");
+
+    tableRow.appendChild(tableCell);
+    tableChallengesBody.appendChild(tableRow);
+    table.appendChild(tableChallengesBody);
+
+    tableHeadRow.innerHTML = `${tableChallengesHeader}`;
+    tableRow.innerHTML = `${mainChallengeArrayData.allChallenges}`;
+
+    fetchAllChallengesTable.appendChild(table);
+    console.log(table);
   });
 };
 
