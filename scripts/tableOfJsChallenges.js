@@ -16,7 +16,7 @@ const printAllChallengesTable = (mainChallengesArrayDatas) => {
   let table = document.createElement("table");
 
   mainChallengesArrayDatas.forEach((mainChallengeArrayData) => {
-    // console.log(mainChallengeArrayData);
+    console.log(mainChallengeArrayData);
 
     // Table Header structure
 
@@ -39,7 +39,12 @@ const printAllChallengesTable = (mainChallengesArrayDatas) => {
     table.appendChild(tableChallengesBody);
 
     tableHeadRow.innerHTML = `${tableChallengesHeader}`;
-    tableRow.innerHTML = `${mainChallengeArrayData.allChallenges}`;
+
+    let groupChallengesArrayDatas = mainChallengeArrayData.allChallenges;
+    groupChallengesArrayDatas.forEach((groupChallengesArrayData) => {
+      tableCell.innerHTML = `${groupChallengesArrayData.title}`;
+      tableRow.innerHTML = `${groupChallengesArrayData.content}`;
+    });
 
     fetchAllChallengesTable.appendChild(table);
     console.log(table);
