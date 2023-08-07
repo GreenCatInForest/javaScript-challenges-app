@@ -26,6 +26,7 @@ const printAllChallengesTable = (mainChallengesArrayDatas) => {
     console.log("Here are the groups of challenges:");
     groupChallengesArrayDatas.forEach((groupChallengesArrayData) => {
       console.log(groupChallengesArrayData.title, groupChallengesArrayData);
+
       let listParticularChallenges = groupChallengesArrayData.challenge;
 
       if (listParticularChallenges) {
