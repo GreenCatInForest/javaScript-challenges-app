@@ -15,10 +15,10 @@ const getDataAllChallengesTable = () => {
 const printAllChallengesTable = (mainChallengesArrayDatas) => {
   let table = document.createElement("table");
 
+  // Table Header
+
   mainChallengesArrayDatas.forEach((mainChallengeArrayData) => {
     console.log(mainChallengeArrayData);
-
-    // Table Header structure
 
     let tableChallengesHeader = mainChallengeArrayData.name;
     let tableHead = document.createElement("thead");
@@ -29,21 +29,38 @@ const printAllChallengesTable = (mainChallengesArrayDatas) => {
     tableHead.appendChild(tableHeadRow);
     table.appendChild(tableHead);
 
-    // Table Inner Block structure
+    // Table Body
+
     let tableChallengesBody = document.createElement("tbody");
-    let tableRow = document.createElement("tr");
-    let tableCell = document.createElement("td");
-
-    tableRow.appendChild(tableCell);
-    tableChallengesBody.appendChild(tableRow);
-    table.appendChild(tableChallengesBody);
-
     tableHeadRow.innerHTML = `${tableChallengesHeader}`;
 
     let groupChallengesArrayDatas = mainChallengeArrayData.allChallenges;
+
     groupChallengesArrayDatas.forEach((groupChallengesArrayData) => {
-      tableCell.innerHTML = `${groupChallengesArrayData.title}`;
-      tableRow.innerHTML = `${groupChallengesArrayData.content}`;
+      let tableRow = document.createElement("tr");
+      let tableCell = document.createElement("td");
+      tableRow.innerHTML = `${groupChallengesArrayData.title}`;
+      tableCell.innerHTML = `${groupChallengesArrayData.content}`;
+
+      tableChallengesBody.appendChild(tableRow);
+      table.appendChild(tableChallengesBody);
+
+      // Nested Table
+
+      let listParticularChallenges = groupChallengesArrayData.challenge;
+      if (listParticularChallenges) {
+        listParticularChallenges.forEach((listParticularChallenge) => {
+          let nestedTableRow = document.createElement("tr");
+          let nestedTableCell = document.createElement("td");
+          nestedTableRow.innerHTML = `${listParticularChallenge.challengeTitle}`;
+          nestedTableCell.innerHTML = `${listParticularChallenge.challengeDescription}`;
+
+          tableChallengesBody.appendChild(nestedTableRow);
+          nestedTableRow.appendChild(nestedTableCell);
+        });
+      } else {
+        tableRow.appendChild(tableCell);
+      }
     });
 
     fetchAllChallengesTable.appendChild(table);
