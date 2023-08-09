@@ -65,29 +65,29 @@ const printAllChallengesTable = (mainChallengesArrayDatas) => {
       table.appendChild(tableChallengesBody);
 
       let addButtons = () => {
-        let tableHeadRowButton = document.createElement("tr");
-        let tableHeadCellButton = document.createElement("td");
+        let tableRowButton = document.createElement("tr");
+        let tableCellButton = document.createElement("td");
 
-        let tableHeadCheatsheetButton = document.createElement("button");
-        let tableHeadToChallengeButton = document.createElement("button");
+        let tableCheatsheetButton = document.createElement("button");
+        let tableToChallengeButton = document.createElement("button");
         let tableAddChallengeButton = document.createElement("button");
 
-        tableHeadRowButton.className = "tableHeadRowButton";
-        tableHeadCellButton.className = "tableHeadCellButton";
-        tableHeadCheatsheetButton.className = "tableHeadCheatsheetButton";
-        tableHeadToChallengeButton.className = "tableHeadToChallengeButton";
+        tableRowButton.className = "tableRowButton";
+        tableCellButton.className = "tableCellButton";
+        tableCheatsheetButton.className = "tableCheatsheetButton";
+        tableToChallengeButton.className = "tableToChallengeButton";
         tableAddChallengeButton.className = "tableAddChallengeButton";
 
-        tableHeadCheatsheetButton.innerHTML = "Cheatsheet";
-        tableHeadToChallengeButton.innerHTML = "See the solution";
+        tableCheatsheetButton.innerHTML = "Cheatsheet";
+        tableToChallengeButton.innerHTML = "See the solution";
         tableAddChallengeButton.innerHTML = "Propose your challenge";
 
-        tableHeadCellButton.appendChild(tableHeadCheatsheetButton);
-        tableHeadCellButton.appendChild(tableHeadToChallengeButton);
-        tableHeadCellButton.appendChild(tableAddChallengeButton);
-        tableHeadRowButton.appendChild(tableHeadCellButton);
+        // tableHeadCellButton.appendChild(tableHeadCheatsheetButton);
+        // tableHeadCellButton.appendChild(tableHeadToChallengeButton);
+        // tableHeadCellButton.appendChild(tableAddChallengeButton);
+        // tableHeadRowButton.appendChild(tableHeadCellButton);
 
-        table.appendChild(tableHeadRowButton);
+        // table.appendChild(tableHeadRowButton);
       };
 
       addButtons(mainChallengeArrayData);
