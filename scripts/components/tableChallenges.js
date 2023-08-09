@@ -11,21 +11,32 @@ fetch("./data/data.json")
   })
   .catch((error) => console.error(error));
 
-//
 const createTable = () => {
+  createTableHead();
+  createTableBody();
+  tableHead.appendChild(tableBody);
+};
+
+//
+const createTableHead = () => {
   let tableHead = document.createElement("thead");
   let tableTh = document.createElement("th");
   tableTh.textContent = innerHtmlTh;
 
+  tableHead.appendChild(tableTh);
+  table.appendChild(tableHead);
+};
+
+const createTableBody = () => {
   let tableBody = document.createElement("tbody");
   let tableBodyRow = document.createElement("tr");
   let tableBodyCell = document.createElement("td");
 
-  tableHead.appendChild(tableTh);
+  tableBodyRow.textContent = innerHtmltableBodyRow;
+  tableBodyCell.textContent = innerHtmltableBodyCell;
+
   tableBodyRow.appendChild(tableBodyCell);
   tableBody.appendChild(tableBodyRow);
-
-  table.appendChild(tableHead);
   table.appendChild(tableBody);
 };
 
@@ -36,14 +47,26 @@ const sortDataChallenges = (challengesDatas) => {
       console.log(basicChallengesData);
 
       basicChallengesData.forEach((basicChallengeData) => {
-        console.log(basicChallengeData);
         innerHtmlTh = basicChallengeData.title;
-        createTable();
+        createTableHead();
+
+        let basicChallengesDetails = basicChallengeData.challenge;
+        basicChallengesDetails.forEach((basicChallengesDetail) => {
+          innerHtmltableBodyRow = basicChallengesDetail.challengeTitle;
+          innerHtmltableBodyCell = basicChallengesDetail.challengeDescription;
+          createTableBody();
+        });
       });
     } else {
-      console.log(challengesData);
+      let particularChallengesDetails = challengesData.allChallenges;
       innerHtmlTh = challengesData.title;
-      createTable();
+      createTableHead();
+
+      particularChallengesDetails.forEach((particularChallengesDetail) => {
+        innerHtmltableBodyRow = particularChallengesDetail.title;
+        innerHtmltableBodyCell = particularChallengesDetail.content;
+        createTableBody();
+      });
     }
   });
 };
