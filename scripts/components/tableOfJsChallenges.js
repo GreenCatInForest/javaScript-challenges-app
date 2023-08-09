@@ -64,6 +64,37 @@ const printAllChallengesTable = (mainChallengesArrayDatas) => {
       tableChallengesBody.appendChild(tableRow);
       table.appendChild(tableChallengesBody);
 
+      let addButtons = () => {
+        let tableHeadRowButton = document.createElement("tr");
+        let tableHeadCellButton = document.createElement("td");
+
+        let tableHeadCheatsheetButton = document.createElement("button");
+        let tableHeadToChallengeButton = document.createElement("button");
+        let tableAddChallengeButton = document.createElement("button");
+
+        tableHeadRowButton.className = "tableHeadRowButton";
+        tableHeadCellButton.className = "tableHeadCellButton";
+        tableHeadCheatsheetButton.className = "tableHeadCheatsheetButton";
+        tableHeadToChallengeButton.className = "tableHeadToChallengeButton";
+        tableAddChallengeButton.className = "tableAddChallengeButton";
+
+        tableHeadCheatsheetButton.innerHTML = "Cheatsheet";
+        tableHeadToChallengeButton.innerHTML = "See the solution";
+        tableAddChallengeButton.innerHTML = "Propose your challenge";
+
+        tableHeadCellButton.appendChild(tableHeadCheatsheetButton);
+        tableHeadCellButton.appendChild(tableHeadToChallengeButton);
+        tableHeadCellButton.appendChild(tableAddChallengeButton);
+        tableHeadRowButton.appendChild(tableHeadCellButton);
+
+        table.appendChild(tableHeadRowButton);
+      };
+
+      addButtons(mainChallengeArrayData);
+
+      if (groupChallengesArrayData) {
+      }
+
       // Nested Table
 
       let listParticularChallenges = groupChallengesArrayData.challenge;

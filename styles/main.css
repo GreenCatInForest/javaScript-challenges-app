@@ -72,6 +72,22 @@ main {
   justify-content: center;
 }
 
+/*Challenges Table Main*/
+
+.tableHeaderRow {
+  text-align: center;
+  font-weight: bold;
+}
+
+#tableOfChallenges {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  gap: var(--sizeLg);
+  align-items: center;
+  justify-content: center;
+}
+
 /* JS Challenges*/
 
 /*  JS Challenges Navigation*/
