@@ -408,7 +408,7 @@
           ]
         },
         {
-          "title": "Basic: Functions.",
+          "title": "Basic: Functions",
           "content": "Declaration, expression, arrow functions",
           "image": "./images/surfing-g130578680_1280.jpg",
           "projectLink": "./challenges/startersJsChallenges.html",
@@ -703,6 +703,7 @@
     {
       "name": "algorithmicChallenges",
       "pageLink": "./algorithmicChallenges.html",
+      "title": "Algorithmic Challenges",
 
       "allChallenges": [
         {
@@ -773,6 +774,7 @@
     {
       "name": "asynchronousChallenges",
       "pageLink": "./asynchronousChallenges.html",
+      "title": "Asynchronous Challenges",
 
       "allChallenges": [
         {
@@ -873,6 +875,7 @@
     {
       "name": "errorHandlingChallenges",
       "pageLink": "./errorHandlingChallenges.html",
+      "title": "Error Handling Challenges",
 
       "allChallenges": [
         {
@@ -951,6 +954,7 @@
     {
       "name": "functionalProgrammingChallenges",
       "pageLink": "./functionalProgrammingChallenges.html",
+      "title": "Functional Programming Challenges",
 
       "allChallenges": [
         {
@@ -1044,6 +1048,7 @@
     {
       "name": "portfolioChallenges",
       "pageLink": "./portfolioChallenges.html",
+      "title": "Portfolio Challenges",
 
       "allChallenges": [
         {
