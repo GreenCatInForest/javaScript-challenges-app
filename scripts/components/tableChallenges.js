@@ -14,12 +14,12 @@ fetch("./data/data.json")
 const createTable = () => {
   createTableHead();
   createTableBody();
-  tableHead.appendChild(tableBody);
 };
 
 //
 const createTableHead = () => {
   let tableHead = document.createElement("thead");
+
   let tableTh = document.createElement("th");
   tableTh.textContent = innerHtmlTh;
 
