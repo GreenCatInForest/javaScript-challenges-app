@@ -78,11 +78,6 @@ main {
 
 /*Challenges Table Main*/
 
-.tableHeaderRow {
-  text-align: center;
-  font-weight: bold;
-}
-
 #tableOfChallenges {
   display: flex;
   flex-direction: column;
