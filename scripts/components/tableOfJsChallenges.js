@@ -9,9 +9,11 @@ const getDataAllChallengesTable = () => {
       console.log(datas);
       let mainChallengesArrayDatas = datas.challenges;
       printAllChallengesTable(mainChallengesArrayDatas);
+      // addButtons(mainChallengesArrayDatas);
     })
     .catch((error) => console.error(error));
 };
+
 const printAllChallengesTable = (mainChallengesArrayDatas) => {
   let table = document.createElement("table");
 
@@ -63,37 +65,6 @@ const printAllChallengesTable = (mainChallengesArrayDatas) => {
 
       tableChallengesBody.appendChild(tableRow);
       table.appendChild(tableChallengesBody);
-
-      let addButtons = () => {
-        let tableRowButton = document.createElement("tr");
-        let tableCellButton = document.createElement("td");
-
-        let tableCheatsheetButton = document.createElement("button");
-        let tableToChallengeButton = document.createElement("button");
-        let tableAddChallengeButton = document.createElement("button");
-
-        tableRowButton.className = "tableRowButton";
-        tableCellButton.className = "tableCellButton";
-        tableCheatsheetButton.className = "tableCheatsheetButton";
-        tableToChallengeButton.className = "tableToChallengeButton";
-        tableAddChallengeButton.className = "tableAddChallengeButton";
-
-        tableCheatsheetButton.innerHTML = "Cheatsheet";
-        tableToChallengeButton.innerHTML = "See the solution";
-        tableAddChallengeButton.innerHTML = "Propose your challenge";
-
-        // tableHeadCellButton.appendChild(tableHeadCheatsheetButton);
-        // tableHeadCellButton.appendChild(tableHeadToChallengeButton);
-        // tableHeadCellButton.appendChild(tableAddChallengeButton);
-        // tableHeadRowButton.appendChild(tableHeadCellButton);
-
-        // table.appendChild(tableHeadRowButton);
-      };
-
-      addButtons(mainChallengeArrayData);
-
-      if (groupChallengesArrayData) {
-      }
 
       // Nested Table
 
@@ -151,6 +122,40 @@ const printAllChallengesTable = (mainChallengesArrayDatas) => {
 //     });
 //   });
 //   //document.createElement
+// };
+
+// let addButtons = (mainChallengesArrayDatas) => {
+//   let tableRowButton = document.createElement("tr");
+//   let tableCellButton = document.createElement("td");
+
+//   let tableCheatSheetButton = document.createElement("button");
+//   let tableToChallengeButton = document.createElement("button");
+//   let tableAddChallengeButton = document.createElement("button");
+
+//   tableRowButton.className = "tableRowButton";
+//   tableCellButton.className = "tableCellButton";
+//   tableCheatSheetButton.className = "tableCheatSheetButton";
+//   tableToChallengeButton.className = "tableToChallengeButton";
+//   tableAddChallengeButton.className = "tableAddChallengeButton";
+
+//   tableCheatSheetButton.innerHTML = "Cheatsheet";
+//   tableToChallengeButton.innerHTML = "See the solution";
+//   tableAddChallengeButton.innerHTML = "Propose your challenge";
+
+//   if (mainChallengesArrayDatas[0].name === "basicJsChallenges") {
+//     tableCellButton.appendChild(tableCheatSheetButton);
+//     tableCellButton.appendChild(tableToChallengeButton);
+//     tableCellButton.appendChild(tableAddChallengeButton);
+//     tableRowButton.appendChild(tableCellButton);
+//     tbody.appendChild(tableRowButton);
+//   }
+
+// tableHeadCellButton.appendChild(tableHeadCheatsheetButton);
+// tableHeadCellButton.appendChild(tableHeadToChallengeButton);
+// tableHeadCellButton.appendChild(tableAddChallengeButton);
+// tableHeadRowButton.appendChild(tableHeadCellButton);
+
+// table.appendChild(tableHeadRowButton);
 // };
 
 getDataAllChallengesTable();
