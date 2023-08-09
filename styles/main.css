@@ -32,6 +32,12 @@
 
 /* Header*/
 
+header {
+  display: flex;
+  flex-direction: column;
+  padding: var(--sizeMd);
+}
+
 .topNav ul {
   display: flex;
   flex-direction: column;
@@ -47,7 +53,26 @@
   display: none;
 }
 
-/* JS Challenges */
+/* Main */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sizeLg);
+}
+
+#challengeIntro {
+  display: flex;
+  flex-direction: column;
+  max-width: 90%;
+  gap: var(--sizeMd);
+  align-items: center;
+  justify-content: center;
+}
+
+/* JS Challenges*/
 
 /*  JS Challenges Navigation*/
 
@@ -140,6 +165,11 @@
   }
 
   /* Header*/
+
+  header {
+    display: flex;
+    flex-direction: row;
+  }
 
   .topNav ul {
     display: flex;

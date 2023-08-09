@@ -4,7 +4,7 @@ const createHeaderTitle = () => {
   let headerTitle = document.createElement("div");
   headerTitle.innerHTML = `
   <h1>
-  <a href="/index.html">Vanilla JavaScript</a>
+  <a href="/index.html">Vanilla JS Challenges</a>
   </h1>`;
   header.appendChild(headerTitle);
 };
