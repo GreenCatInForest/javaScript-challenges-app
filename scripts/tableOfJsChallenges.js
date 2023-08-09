@@ -17,6 +17,23 @@ const printAllChallengesTable = (mainChallengesArrayDatas) => {
 
   // Table Header
 
+  let tableHeader = document.createElement("thead");
+  let tableHeaderRow = document.createElement("tr");
+  let tableHeaderCell = document.createElement("td");
+
+  tableHeader.className = "tableHeader";
+  tableHeaderRow.className = "tableHeaderRow";
+  tableHeaderCell.className = "tableHeaderCell";
+
+  tableHeaderRow.innerHTML = `Name`;
+  tableHeaderCell.innerHTML = `Description`;
+
+  tableHeaderRow.appendChild(tableHeaderCell);
+  tableHeader.appendChild(tableHeaderRow);
+  table.appendChild(tableHeader);
+
+  // Table Body
+
   mainChallengesArrayDatas.forEach((mainChallengeArrayData) => {
     console.log(mainChallengeArrayData);
 
@@ -25,11 +42,13 @@ const printAllChallengesTable = (mainChallengesArrayDatas) => {
     let tableHeadRow = document.createElement("tr");
     let tableHeadCell = document.createElement("td");
 
+    tableHead.className = "tableHead";
+    tableHeadRow.className = "tableHeadRow";
+    tableHeadCell.className = "tableHeadCell";
+
     tableHeadRow.appendChild(tableHeadCell);
     tableHead.appendChild(tableHeadRow);
     table.appendChild(tableHead);
-
-    // Table Body
 
     let tableChallengesBody = document.createElement("tbody");
     tableHeadRow.innerHTML = `${tableChallengesHeader}`;
@@ -57,6 +76,7 @@ const printAllChallengesTable = (mainChallengesArrayDatas) => {
 
           tableChallengesBody.appendChild(nestedTableRow);
           nestedTableRow.appendChild(nestedTableCell);
+          tableRow.appendChild(tableCell);
         });
       } else {
         tableRow.appendChild(tableCell);
@@ -68,6 +88,7 @@ const printAllChallengesTable = (mainChallengesArrayDatas) => {
   });
 };
 
+// Functionality Test for debugging
 // const printAllChallengesTable = (mainChallengesArrayDatas) => {
 //   console.log("Here are the main challenges:");
 
