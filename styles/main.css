@@ -36,6 +36,9 @@ header {
   display: flex;
   flex-direction: column;
   padding: var(--sizeMd);
+  align-items: center;
+  text-align: center;
+  gap: var(--sizeSm);
 }
 
 .topNav ul {
@@ -47,6 +50,7 @@ header {
 
 .topNav ul li {
   font-size: var(--sizeMd);
+  padding: var(--sizeMd);
 }
 
 .topNavHidden li {
@@ -185,6 +189,8 @@ main {
   header {
     display: flex;
     flex-direction: row;
+    padding: var(--sizeMd);
+    text-align: center;
   }
 
   .topNav ul {
