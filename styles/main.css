@@ -70,10 +70,13 @@ main {
 #challengeIntro {
   display: flex;
   flex-direction: column;
-  max-width: 70%;
   gap: var(--sizeMd);
   align-items: center;
   justify-content: center;
+}
+
+main > * {
+  max-width: 70%;
 }
 
 /*Challenges Table Main*/
@@ -81,28 +84,35 @@ main {
 .tableGridContainer {
   display: grid;
   grid-template-columns: 1fr;
+  border: 1px solid black;
+  max-width: fit-content;
 }
 
 .tableGridHeader {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: var(--sizeSm);
-  width: 100%;
+  column-gap: 1%;
+  padding: var(--sizeMd);
   font-weight: bold;
+  border: 1px solid black;
 }
 
 .tableGridBody {
   display: grid;
   grid-template-columns: 1fr 1fr;
   border: 1px solid black;
-  padding: var(--sizeSm);
-  width: 100%;
+  padding: var(--sizeMd);
+}
+
+.tableGridButtonContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: var(--sizeMd);
 }
 
 #tableOfChallenges {
   display: flex;
   flex-direction: column;
-  max-width: 80%;
   gap: var(--sizeLg);
   align-items: center;
   justify-content: center;

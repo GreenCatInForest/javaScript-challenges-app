@@ -27,14 +27,15 @@ let createTableGridHeader = () => {
   tableGridHeader.appendChild(tableGridHeaderTitle);
   tableGridContainer.appendChild(tableGridHeader);
 
-  if (!innerHtmlThD) {
-  } else {
+  let createTableHeaderDescription = () => {
     let tableGridHeaderDescription = document.createElement("div");
     tableGridHeaderDescription.textContent = innerHtmlThD;
     tableGridHeaderDescription.className =
       "tableGridHeaderDescription grid-item";
     tableGridHeader.appendChild(tableGridHeaderDescription);
-  }
+  };
+
+  innerHtmlThD ? createTableHeaderDescription() : {};
 };
 
 let createTableGridBody = () => {
@@ -54,6 +55,27 @@ let createTableGridBody = () => {
   tableGridContainer.appendChild(tableGridBody);
 };
 
+let createTableGridButtons = () => {
+  let tableGridButtonContainer = document.createElement("div");
+  let cheatSheetButton = document.createElement("button");
+  let toChallengeButton = document.createElement("button");
+  let addChallengeButton = document.createElement("button");
+
+  cheatSheetButton.textContent = "Cheatsheet";
+  toChallengeButton.textContent = "View a Solution";
+  addChallengeButton.textContent = "+ Add a new challenge";
+
+  tableGridButtonContainer.className = "tableGridButtonContainer grid-item";
+  cheatSheetButton.className = "tableGridButton grid-item";
+  toChallengeButton.className = "tableGridButton grid-item";
+  addChallengeButton.className = "tableGridButton grid-item";
+
+  tableGridContainer.appendChild(tableGridButtonContainer);
+  tableGridButtonContainer.appendChild(cheatSheetButton);
+  tableGridButtonContainer.appendChild(toChallengeButton);
+  tableGridButtonContainer.appendChild(addChallengeButton);
+};
+
 const sortDataChallenges = (challengesDatas) => {
   challengesDatas.forEach((challengesData) => {
     if (challengesData.name === "basicJsChallenges") {
@@ -66,6 +88,7 @@ const sortDataChallenges = (challengesDatas) => {
         innerHtmlThD = basicChallengeData.content;
         //createTableHead();
         createTableGridHeader();
+        createTableGridButtons();
 
         let basicChallengesDetails = basicChallengeData.challenge;
         basicChallengesDetails.forEach((basicChallengesDetail) => {
