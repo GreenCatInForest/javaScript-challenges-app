@@ -78,6 +78,19 @@ main {
 
 /*Challenges Table Main*/
 
+.tableGridContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 1px solid black;
+}
+
+.tableGridHeader {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid black;
+  padding: var(--sizeSm);
+}
+
 #tableOfChallenges {
   display: flex;
   flex-direction: column;

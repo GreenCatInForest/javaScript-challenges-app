@@ -11,12 +11,33 @@ fetch("./data/data.json")
   })
   .catch((error) => console.error(error));
 
+let createTableGridContainer = () => {
+  tableGridContainer = document.createElement("div");
+  tableGridContainer.className = "tableGridContainer";
+  fetchChallengesTable.appendChild(tableGridContainer);
+};
+
+let createTableGridHeader = () => {
+  let tableGridHeader = document.createElement("div");
+  let tableGridHeaderTitle = document.createElement("div");
+  let tableGridHeaderDescription = document.createElement("div");
+  tableGridHeaderTitle.textContent = innerHtmlTh;
+  tableGridHeaderDescription.textContent = innerHtmlThD;
+
+  tableGridHeader.className = "tableGridHeader grid-item";
+  tableGridHeaderTitle.className = "tableGridHeaderTitle grid-item";
+  tableGridHeaderDescription.className = "tableGridHeaderDescription grid-item";
+  tableGridHeader.appendChild(tableGridHeaderTitle);
+  tableGridHeader.appendChild(tableGridHeaderDescription);
+  tableGridContainer.appendChild(tableGridHeader);
+};
+
 const createTable = () => {
   createTableHead();
   createTableBody();
+  createTableButtons();
 };
 
-//
 const createTableHead = () => {
   let tableHead = document.createElement("thead");
 
@@ -40,15 +61,35 @@ const createTableBody = () => {
   table.appendChild(tableBody);
 };
 
+const createTableButtons = () => {
+  let buttonRow = document.createElement("tr");
+
+  let cheatSheetButton = document.createElement("button");
+  let toChallengeButton = document.createElement("button");
+  let addChallengeButton = document.createElement("button");
+
+  cheatSheetButton.textContent = "Cheatsheet";
+  toChallengeButton.textContent = "View a Solution";
+  addChallengeButton.textContent = "Add a new challenge";
+
+  buttonRow.appendChild(cheatSheetButton);
+  buttonRow.appendChild(toChallengeButton);
+  buttonRow.appendChild(addChallengeButton);
+  table.appendChild(buttonRow);
+};
+
 const sortDataChallenges = (challengesDatas) => {
   challengesDatas.forEach((challengesData) => {
     if (challengesData.name === "basicJsChallenges") {
       let basicChallengesData = challengesData.allChallenges;
       console.log(basicChallengesData);
+      createTableGridContainer();
 
       basicChallengesData.forEach((basicChallengeData) => {
         innerHtmlTh = basicChallengeData.title;
+        innerHtmlThD = basicChallengeData.content;
         createTableHead();
+        createTableGridHeader();
 
         let basicChallengesDetails = basicChallengeData.challenge;
         basicChallengesDetails.forEach((basicChallengesDetail) => {
@@ -56,6 +97,7 @@ const sortDataChallenges = (challengesDatas) => {
           innerHtmltableBodyCell = basicChallengesDetail.challengeDescription;
           createTableBody();
         });
+        createTableButtons();
       });
     } else {
       let particularChallengesDetails = challengesData.allChallenges;
