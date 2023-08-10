@@ -77,7 +77,7 @@ let createTableGridButtons = () => {
   let toChallengeButton = document.createElement("button");
   let addChallengeButton = document.createElement("button");
 
-  tableGridButtonContainer.className = "tableGridButtonContainer grid-item";
+  tableGridButtonContainer.className = "tableGridButtonContainer";
   cheatSheetButton.className = "tableGridButton cheatSheetButton";
   toChallengeButton.className = "tableGridButton toChallengeButton";
   addChallengeButton.className = "tableGridButton addChallengeButton";
@@ -107,6 +107,11 @@ const sortDataChallenges = (challengesDatas) => {
         createTableGridHeader();
         createTableGridButtons();
 
+        let toChallengeButton =
+          tableGridContainer.querySelector(".toChallengeButton");
+        toChallengeButton.setAttribute("dataLink", challengesData.pageLink);
+        console.log(challengesData.pageLink);
+
         let basicChallengesDetails = basicChallengeData.challenge;
 
         basicChallengesDetails.forEach((basicChallengesDetail) => {
@@ -114,16 +119,12 @@ const sortDataChallenges = (challengesDatas) => {
           innerHtmlThD = basicChallengesDetail.challengeDescription;
 
           createTableGridBody();
-          let toChallengeButton =
-            tableGridContainer.querySelector(".toChallengeButton");
-          toChallengeButton.setAttribute("dataLink", challengesData.pageLink);
         });
       });
     } else {
       let particularChallengesDetails = challengesData.allChallenges;
       innerHtmlTh = challengesData.title;
       innerHtmlThD = "";
-      goToChallengesLink = challengesData.pageLink;
 
       createTableGridHeader();
       createTableGridButtons();
