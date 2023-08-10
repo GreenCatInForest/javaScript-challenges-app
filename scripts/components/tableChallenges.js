@@ -63,9 +63,8 @@ let goToCheatSheet = () => {
   window.open("https://www.w3schools.com");
 };
 
-let goToChallenges = () => {
-  console.log("n");
-  console.log(goToChallengesLink);
+let goToChallenges = (goToChallengesLink) => {
+  window.open(goToChallengesLink);
 };
 
 let goAddChallenge = () => {
@@ -78,23 +77,19 @@ let createTableGridButtons = () => {
   let toChallengeButton = document.createElement("button");
   let addChallengeButton = document.createElement("button");
 
+  tableGridButtonContainer.className = "tableGridButtonContainer grid-item";
+  cheatSheetButton.className = "tableGridButton cheatSheetButton";
+  toChallengeButton.className = "tableGridButton toChallengeButton";
+  addChallengeButton.className = "tableGridButton addChallengeButton";
+
   cheatSheetButton.textContent = "Cheatsheet";
   toChallengeButton.textContent = "View a Solution";
   addChallengeButton.textContent = "+ Add a new challenge";
-
-  tableGridButtonContainer.className = "tableGridButtonContainer grid-item";
-  cheatSheetButton.className = "tableGridButton grid-item";
-  toChallengeButton.className = "tableGridButton grid-item";
-  addChallengeButton.className = "tableGridButton grid-item";
 
   tableGridContainer.appendChild(tableGridButtonContainer);
   tableGridButtonContainer.appendChild(cheatSheetButton);
   tableGridButtonContainer.appendChild(toChallengeButton);
   tableGridButtonContainer.appendChild(addChallengeButton);
-
-  cheatSheetButton.addEventListener("click", goToCheatSheet);
-  toChallengeButton.addEventListener("click", goToChallenges);
-  addChallengeButton.addEventListener("click", goAddChallenge);
 };
 
 const sortDataChallenges = (challengesDatas) => {
@@ -119,6 +114,9 @@ const sortDataChallenges = (challengesDatas) => {
           innerHtmlThD = basicChallengesDetail.challengeDescription;
 
           createTableGridBody();
+          let toChallengeButton =
+            tableGridContainer.querySelector(".toChallengeButton");
+          toChallengeButton.setAttribute("dataLink", challengesData.pageLink);
         });
       });
     } else {
@@ -138,7 +136,42 @@ const sortDataChallenges = (challengesDatas) => {
       });
     }
   });
+
+  fetchChallengesTable.addEventListener("click", (event) => {
+    const target = event.target;
+
+    if (target.classList.contains("cheatSheetButton")) {
+      goToCheatSheet();
+    } else if (target.classList.contains("toChallengeButton")) {
+      const goToChallengesLink = target.getAttribute("dataLink");
+      goToChallenges(goToChallengesLink);
+    } else if (target.classList.contains("addChallengeButton")) {
+      goAddChallenge();
+    }
+  });
 };
+
+//   let cheatSheetButtonsTest = document.querySelectorAll(".cheatSheetButton");
+//   console.log(cheatSheetButtonsTest);
+//   let toChallengeButtonsTest = document.querySelectorAll(".toChallengeButton");
+//   let addChallengeButtonsTest = document.querySelectorAll(
+//     ".addChallengeButton"
+//   );
+
+//   cheatSheetButtonsTest.forEach((button) => {
+//     button.addEventListener("click", goToCheatSheet);
+//   });
+
+//   toChallengeButtonsTest.forEach((button) => {
+//     button.addEventListener("click", goToChallenges);
+//   });
+
+//   addChallengeButtonsTest.forEach((button) => {
+//     button.addEventListener("click", goAddChallenge);
+//   });
+
+// let handleCheatSheetButtonsTest = () => {};
+// handleCheatSheetButtonsTest();
 
 // Data display at table form
 
