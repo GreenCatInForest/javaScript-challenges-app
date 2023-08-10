@@ -5,6 +5,7 @@ fetch("./data/data.json")
   .then((datas) => {
     console.log(datas);
     let challengesDatas = datas.challenges;
+    console.log(datas.challenges);
     sortDataChallenges(challengesDatas);
   })
   .catch((error) => console.error(error));
@@ -64,6 +65,7 @@ let goToCheatSheet = () => {
 
 let goToChallenges = () => {
   console.log("n");
+  console.log(goToChallengesLink);
 };
 
 let goAddChallenge = () => {
@@ -90,21 +92,19 @@ let createTableGridButtons = () => {
   tableGridButtonContainer.appendChild(toChallengeButton);
   tableGridButtonContainer.appendChild(addChallengeButton);
 
-  goToChallenges();
-
   cheatSheetButton.addEventListener("click", goToCheatSheet);
   toChallengeButton.addEventListener("click", goToChallenges);
   addChallengeButton.addEventListener("click", goAddChallenge);
 };
 
 const sortDataChallenges = (challengesDatas) => {
+  console.log(challengesDatas);
+
   challengesDatas.forEach((challengesData) => {
     if (challengesData.name === "basicJsChallenges") {
-      let basicChallengesData = challengesData.allChallenges;
-      goToChallengesLink = challengesData.pageLink;
-      console.log(goToChallengesLink);
       createTableGridContainer();
 
+      let basicChallengesData = challengesData.allChallenges;
       basicChallengesData.forEach((basicChallengeData) => {
         innerHtmlTh = basicChallengeData.title;
         innerHtmlThD = basicChallengeData.content;
@@ -113,6 +113,7 @@ const sortDataChallenges = (challengesDatas) => {
         createTableGridButtons();
 
         let basicChallengesDetails = basicChallengeData.challenge;
+
         basicChallengesDetails.forEach((basicChallengesDetail) => {
           innerHtmlTh = basicChallengesDetail.challengeTitle;
           innerHtmlThD = basicChallengesDetail.challengeDescription;
@@ -124,7 +125,7 @@ const sortDataChallenges = (challengesDatas) => {
       let particularChallengesDetails = challengesData.allChallenges;
       innerHtmlTh = challengesData.title;
       innerHtmlThD = "";
-      goToChallengesLink = challengesData.projectLink;
+      goToChallengesLink = challengesData.pageLink;
 
       createTableGridHeader();
       createTableGridButtons();
@@ -132,6 +133,7 @@ const sortDataChallenges = (challengesDatas) => {
       particularChallengesDetails.forEach((particularChallengesDetail) => {
         innerHtmlTh = particularChallengesDetail.title;
         innerHtmlThD = particularChallengesDetail.content;
+
         createTableGridBody();
       });
     }
