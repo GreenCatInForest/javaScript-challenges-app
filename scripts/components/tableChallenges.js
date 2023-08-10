@@ -55,6 +55,8 @@ let createTableGridBody = () => {
   tableGridContainer.appendChild(tableGridBody);
 };
 
+// Button functions
+
 let goToCheatSheet = () => {
   console.log("q");
   window.open("https://www.w3schools.com");
@@ -88,6 +90,8 @@ let createTableGridButtons = () => {
   tableGridButtonContainer.appendChild(toChallengeButton);
   tableGridButtonContainer.appendChild(addChallengeButton);
 
+  goToChallenges();
+
   cheatSheetButton.addEventListener("click", goToCheatSheet);
   toChallengeButton.addEventListener("click", goToChallenges);
   addChallengeButton.addEventListener("click", goAddChallenge);
@@ -97,7 +101,8 @@ const sortDataChallenges = (challengesDatas) => {
   challengesDatas.forEach((challengesData) => {
     if (challengesData.name === "basicJsChallenges") {
       let basicChallengesData = challengesData.allChallenges;
-      console.log(basicChallengesData);
+      goToChallengesLink = challengesData.pageLink;
+      console.log(goToChallengesLink);
       createTableGridContainer();
 
       basicChallengesData.forEach((basicChallengeData) => {
@@ -119,6 +124,8 @@ const sortDataChallenges = (challengesDatas) => {
       let particularChallengesDetails = challengesData.allChallenges;
       innerHtmlTh = challengesData.title;
       innerHtmlThD = "";
+      goToChallengesLink = challengesData.projectLink;
+
       createTableGridHeader();
       createTableGridButtons();
 
