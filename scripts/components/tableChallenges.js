@@ -64,6 +64,7 @@ let goToCheatSheet = () => {
 };
 
 let goToChallenges = (goToChallengesLink) => {
+  console.log(goToChallengesLink);
   window.open(goToChallengesLink);
 };
 
@@ -96,14 +97,20 @@ const sortDataChallenges = (challengesDatas) => {
   console.log(challengesDatas);
 
   challengesDatas.forEach((challengesData) => {
+    console.log(challengesData);
     if (challengesData.name === "basicJsChallenges") {
       createTableGridContainer();
 
       let basicChallengesData = challengesData.allChallenges;
+      console.log(basicChallengesData);
       basicChallengesData.forEach((basicChallengeData) => {
         innerHtmlTh = basicChallengeData.title;
         innerHtmlThD = basicChallengeData.content;
-
+        console.log(
+          challengesData.name +
+            challengesData.pageLink +
+            basicChallengeData.projectLink
+        );
         createTableGridHeader();
         createTableGridButtons();
 
@@ -144,7 +151,7 @@ const sortDataChallenges = (challengesDatas) => {
     if (target.classList.contains("cheatSheetButton")) {
       goToCheatSheet();
     } else if (target.classList.contains("toChallengeButton")) {
-      const goToChallengesLink = target.getAttribute("dataLink");
+      let goToChallengesLink = target.getAttribute("dataLink");
       goToChallenges(goToChallengesLink);
     } else if (target.classList.contains("addChallengeButton")) {
       goAddChallenge();
