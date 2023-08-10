@@ -37,7 +37,23 @@ let createTableGridHeader = () => {
   }
 };
 
-//
+let createTableGridBody = () => {
+  let tableGridBody = document.createElement("div");
+  let tableGridBodyDescription = document.createElement("div");
+  let tableGridBodyTitle = document.createElement("div");
+
+  tableGridBodyTitle.textContent = innerHtmlTh;
+  tableGridBodyDescription.textContent = innerHtmlThD;
+
+  tableGridBody.className = "tableGridBody grid-item";
+  tableGridBodyTitle.className = "tableGridBodyTitle grid-item";
+  tableGridBodyDescription.className = "tableGridBodyDescription grid-item";
+
+  tableGridBody.appendChild(tableGridBodyTitle);
+  tableGridBody.appendChild(tableGridBodyDescription);
+  tableGridContainer.appendChild(tableGridBody);
+};
+
 const sortDataChallenges = (challengesDatas) => {
   challengesDatas.forEach((challengesData) => {
     if (challengesData.name === "basicJsChallenges") {
@@ -53,9 +69,10 @@ const sortDataChallenges = (challengesDatas) => {
 
         let basicChallengesDetails = basicChallengeData.challenge;
         basicChallengesDetails.forEach((basicChallengesDetail) => {
-          innerHtmltableBodyRow = basicChallengesDetail.challengeTitle;
-          innerHtmltableBodyCell = basicChallengesDetail.challengeDescription;
+          innerHtmlTh = basicChallengesDetail.challengeTitle;
+          innerHtmlThD = basicChallengesDetail.challengeDescription;
           //createTableBody();
+          createTableGridBody();
         });
         //createTableButtons();
       });
@@ -66,9 +83,10 @@ const sortDataChallenges = (challengesDatas) => {
       createTableGridHeader();
 
       particularChallengesDetails.forEach((particularChallengesDetail) => {
-        innerHtmltableBodyRow = particularChallengesDetail.title;
-        innerHtmltableBodyCell = particularChallengesDetail.content;
+        innerHtmlTh = particularChallengesDetail.title;
+        innerHtmlThD = particularChallengesDetail.content;
         //createTableBody();
+        createTableGridBody();
       });
     }
   });

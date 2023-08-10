@@ -81,14 +81,22 @@ main {
 .tableGridContainer {
   display: grid;
   grid-template-columns: 1fr;
-  border: 1px solid black;
 }
 
 .tableGridHeader {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding: var(--sizeSm);
+  width: 100%;
+  font-weight: bold;
+}
+
+.tableGridBody {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   border: 1px solid black;
   padding: var(--sizeSm);
+  width: 100%;
 }
 
 #tableOfChallenges {
