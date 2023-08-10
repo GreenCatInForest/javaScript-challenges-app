@@ -55,6 +55,19 @@ let createTableGridBody = () => {
   tableGridContainer.appendChild(tableGridBody);
 };
 
+let goToCheatSheet = () => {
+  console.log("q");
+  window.open("https://www.w3schools.com");
+};
+
+let goToChallenges = () => {
+  console.log("n");
+};
+
+let goAddChallenge = () => {
+  console.log("b");
+};
+
 let createTableGridButtons = () => {
   let tableGridButtonContainer = document.createElement("div");
   let cheatSheetButton = document.createElement("button");
@@ -74,6 +87,10 @@ let createTableGridButtons = () => {
   tableGridButtonContainer.appendChild(cheatSheetButton);
   tableGridButtonContainer.appendChild(toChallengeButton);
   tableGridButtonContainer.appendChild(addChallengeButton);
+
+  cheatSheetButton.addEventListener("click", goToCheatSheet);
+  toChallengeButton.addEventListener("click", goToChallenges);
+  addChallengeButton.addEventListener("click", goAddChallenge);
 };
 
 const sortDataChallenges = (challengesDatas) => {
@@ -86,7 +103,7 @@ const sortDataChallenges = (challengesDatas) => {
       basicChallengesData.forEach((basicChallengeData) => {
         innerHtmlTh = basicChallengeData.title;
         innerHtmlThD = basicChallengeData.content;
-        //createTableHead();
+
         createTableGridHeader();
         createTableGridButtons();
 
@@ -94,21 +111,20 @@ const sortDataChallenges = (challengesDatas) => {
         basicChallengesDetails.forEach((basicChallengesDetail) => {
           innerHtmlTh = basicChallengesDetail.challengeTitle;
           innerHtmlThD = basicChallengesDetail.challengeDescription;
-          //createTableBody();
+
           createTableGridBody();
         });
-        //createTableButtons();
       });
     } else {
       let particularChallengesDetails = challengesData.allChallenges;
       innerHtmlTh = challengesData.title;
       innerHtmlThD = "";
       createTableGridHeader();
+      createTableGridButtons();
 
       particularChallengesDetails.forEach((particularChallengesDetail) => {
         innerHtmlTh = particularChallengesDetail.title;
         innerHtmlThD = particularChallengesDetail.content;
-        //createTableBody();
         createTableGridBody();
       });
     }
