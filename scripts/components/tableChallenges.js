@@ -139,22 +139,21 @@ const sortDataChallenges = (challengesDatas) => {
           createTableGridBody();
         });
       });
-    } else challengesData.name !== "basicJsChallenges";
+    } else {
+      let particularChallengesDetails = challengesData.allChallenges;
+      innerHtmlTh = challengesData.title;
+      innerHtmlThD = "";
 
-    // goToChallengesLink = challengesData.pageLink;
-    let particularChallengesDetails = challengesData.allChallenges;
-    innerHtmlTh = challengesData.title;
-    innerHtmlThD = "";
+      createTableGridHeader();
+      createTableGridButtons();
 
-    createTableGridHeader();
-    createTableGridButtons();
+      particularChallengesDetails.forEach((particularChallengesDetail) => {
+        innerHtmlTh = particularChallengesDetail.title;
+        innerHtmlThD = particularChallengesDetail.content;
 
-    particularChallengesDetails.forEach((particularChallengesDetail) => {
-      innerHtmlTh = particularChallengesDetail.title;
-      innerHtmlThD = particularChallengesDetail.content;
-
-      createTableGridBody();
-    });
+        createTableGridBody();
+      });
+    }
   });
 };
 
