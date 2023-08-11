@@ -1,4 +1,5 @@
-const fetchChallengesTable = document.querySelector("#fetchAllChallengesTable");
+let fetchChallengesTable = document.querySelector("#fetchAllChallengesTable");
+
 let filterBasicChallengesDatas = [];
 let filterOtherChallengesDatas = [];
 let dataArrayGroupsBasicChallenges = [];
@@ -10,9 +11,28 @@ fetch("./data/data.json")
   .then((datas) => {
     let dataChallenges = datas.challenges;
     findNestedCheck(dataChallenges);
-    createTableContainer();
   })
   .catch((error) => console.error(error));
+
+// Table Container
+
+let tableContainer = document.createElement("div");
+let tableHeader = document.createElement("div");
+let tableHead = document.createElement("div");
+let tableButtonsContainer = document.createElement("div");
+let tableBody = document.createElement("div");
+
+tableContainer.className = "tableGridContainer";
+tableHeader.className = "tableGridHeader";
+tableHead.className = "tableGridHead";
+tableButtonsContainer.className = "tableButtonsContainer";
+tableBody.className = "tableGridBody";
+
+fetchChallengesTable.appendChild(tableContainer);
+tableContainer.appendChild(tableHeader);
+tableContainer.appendChild(tableHead);
+tableContainer.appendChild(tableButtonsContainer);
+tableContainer.appendChild(tableBody);
 
 // let iterateDataForButtons = (datas) => {
 //   // All data JSON
@@ -31,8 +51,8 @@ let findNestedCheck = (dataChallenges) => {
     nestedArrayFirstLevel.forEach((nested) => {
       let checkPass = nested.challenge ? true : false;
       console.log(Boolean(checkPass));
-      //   createTest(checkPass);
-      // createTable(checkPass);
+      // createTest(checkPass);
+      createTableContent(checkPass, nested);
     });
   });
 };
@@ -47,37 +67,14 @@ let createTest = (checkPass) => {
   }
 };
 
-// Draw the Table
+// Table Content
 
-// Table Container
-let createTableContainer = () => {
-  let tableContainer = document.createElement("div");
-  let tableHeader = document.createElement("div");
-  let tableHead = document.createElement("div");
-  let tableButtonsContainer = document.createElement("div");
-  let tableBody = document.createElement("div");
+let createTableContent = (checkPass, nested) => {
+  console.log(nested.title);
 
-  tableContainer.className = "tableGridContainer";
-  tableHeader.className = "tableGridHeader";
-  tableHead.className = "tableGridHead";
-  tableButtonsContainer.className = "tableButtonsContainer";
-  tableBody.className = "tableGridBody";
-
-  fetchChallengesTable.appendChild(tableContainer);
-  tableContainer.appendChild(tableHeader);
-  tableContainer.appendChild(tableHead);
-  tableContainer.appendChild(tableButtonsContainer);
-  tableContainer.appendChild(tableBody);
-};
-
-let createTable = (checkPass) => {
   let createDiv = document.createElement("div");
+  tableBody.appendChild(createDiv);
 
-  let TableHeader = document.createElement("div");
-  let TableHead = document.createElement("div");
-  let TableBody = document.createElement("div");
-
-  fetchChallengesTable.appendChild(createDiv);
   if (checkPass === true) {
     createDiv.innerHTML = "+";
   } else {
