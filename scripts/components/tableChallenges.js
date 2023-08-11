@@ -23,6 +23,31 @@ let iterateDataForButtons = (datas) => {
   let dataChallenges = datas.challenges;
   console.log(dataChallenges);
 
+  // find an array with the nested challenges from all the challenges
+
+  let nestedChallengesExist = (nestedArrayFirstLevel) => {
+    nestedArrayFirstLevel.forEach((nested) => {
+      nested.challenge ? console.log("+") : console.log("-");
+    });
+  };
+
+  let findNested = () => {
+    dataChallenges.forEach((dataChallenge) => {
+      let nestedArrayFirstLevel = dataChallenge.allChallenges;
+      nestedChallengesExist(nestedArrayFirstLevel);
+    });
+  };
+  findNested();
+
+  //   console.log(nestedArrayFirstLevel);
+  //   let nestedChallengesExist = () => {
+  //     dataChallenge.allChallenges.challenge
+  //       ? console.log("+")
+  //       : console.log("-");
+  //   };
+  //   console.log(dataChallenges.some(nestedChallengesExist));
+  // });
+
   // Filter basic challenges from others challenges
 
   let dataFilterByNames = () => {
