@@ -1,14 +1,53 @@
 const fetchChallengesTable = document.querySelector("#fetchAllChallengesTable");
+let filterBasicChallengesDatas = [];
+let filterOtherChallengesDatas = [];
+let dataArrayGroupsBasicChallenges = [];
+let dataListBasicChallenges = [];
 
 fetch("./data/data.json")
   .then((response) => response.json())
   .then((datas) => {
-    console.log(datas);
-    let challengesDatas = datas.challenges;
-    console.log(datas.challenges);
-    sortDataChallenges(challengesDatas);
+    // let challengesDatas = datas.challenges;
+    // console.log(datas.challenges);
+    // sortDataChallenges(challengesDatas);
+    iterateDataForButtons(datas);
   })
   .catch((error) => console.error(error));
+
+let iterateDataForButtons = (datas) => {
+  // All data JSON
+  console.log(datas);
+
+  // Array with all the challenges
+  let dataChallenges = datas.challenges;
+  console.log(dataChallenges);
+
+  // Filter basic challenges from others challenges
+
+  let dataFilterByNames = () => {
+    dataChallenges.forEach((dataChallenge) => {
+      dataChallenge.name === "basicJsChallenges"
+        ? filterBasicChallengesDatas.push(dataChallenge)
+        : filterOtherChallengesDatas.push(dataChallenge);
+    });
+  };
+  dataFilterByNames();
+  console.log(filterBasicChallengesDatas);
+  console.log(filterOtherChallengesDatas);
+
+  // Groups of basic challenges
+  filterBasicChallengesDatas.forEach((filterBasicChallengesData) => {
+    dataArrayGroupsBasicChallenges = filterBasicChallengesData.allChallenges;
+  });
+  console.log(dataArrayGroupsBasicChallenges);
+
+  // List of basic challenges
+
+  dataArrayGroupsBasicChallenges.forEach((dataArrayGroupsBasicChallenge) => {
+    dataListBasicChallenges = dataArrayGroupsBasicChallenge.challenge;
+  });
+  console.log(dataListBasicChallenges);
+};
 
 // Data display at grid form
 
@@ -93,71 +132,73 @@ let createTableGridButtons = () => {
   tableGridButtonContainer.appendChild(addChallengeButton);
 };
 
-const sortDataChallenges = (challengesDatas) => {
-  console.log(challengesDatas);
+// const sortDataChallenges = (challengesDatas) => {
+//   console.log(challengesDatas);
 
-  challengesDatas.forEach((challengesData) => {
-    console.log(challengesData);
-    if (challengesData.name === "basicJsChallenges") {
-      createTableGridContainer();
+//   challengesDatas.forEach((challengesData) => {
+//     console.log(challengesData);
+//     if (challengesData.name === "basicJsChallenges") {
+//       createTableGridContainer();
 
-      let basicChallengesData = challengesData.allChallenges;
-      console.log(basicChallengesData);
-      basicChallengesData.forEach((basicChallengeData) => {
-        innerHtmlTh = basicChallengeData.title;
-        innerHtmlThD = basicChallengeData.content;
-        console.log(
-          challengesData.name +
-            challengesData.pageLink +
-            basicChallengeData.projectLink
-        );
-        createTableGridHeader();
-        createTableGridButtons();
+//       let basicChallengesData = challengesData.allChallenges;
+//       console.log(basicChallengesData);
+//       basicChallengesData.forEach((basicChallengeData) => {
+//         innerHtmlTh = basicChallengeData.title;
+//         innerHtmlThD = basicChallengeData.content;
+//         console.log(
+//           challengesData.name +
+//             challengesData.pageLink +
+//             basicChallengeData.projectLink
+//         );
+//         createTableGridHeader();
+//         createTableGridButtons();
 
-        let toChallengeButton =
-          tableGridContainer.querySelector(".toChallengeButton");
-        toChallengeButton.setAttribute("dataLink", challengesData.pageLink);
-        console.log(challengesData.pageLink);
+//         let toChallengeButton =
+//           tableGridContainer.querySelector(".toChallengeButton");
+//         toChallengeButton.setAttribute("dataLink", challengesData.pageLink);
+//         console.log(challengesData.pageLink);
 
-        let basicChallengesDetails = basicChallengeData.challenge;
+//         let basicChallengesDetails = basicChallengeData.challenge;
 
-        basicChallengesDetails.forEach((basicChallengesDetail) => {
-          innerHtmlTh = basicChallengesDetail.challengeTitle;
-          innerHtmlThD = basicChallengesDetail.challengeDescription;
+//         basicChallengesDetails.forEach((basicChallengesDetail) => {
+//           innerHtmlTh = basicChallengesDetail.challengeTitle;
+//           innerHtmlThD = basicChallengesDetail.challengeDescription;
 
-          createTableGridBody();
-        });
-      });
-    } else {
-      let particularChallengesDetails = challengesData.allChallenges;
-      innerHtmlTh = challengesData.title;
-      innerHtmlThD = "";
+//           createTableGridBody();
+//         });
+//       });
+//     } else {
+//       let particularChallengesDetails = challengesData.allChallenges;
+//       innerHtmlTh = challengesData.title;
+//       innerHtmlThD = "";
 
-      createTableGridHeader();
-      createTableGridButtons();
+//       createTableGridHeader();
+//       createTableGridButtons();
 
-      particularChallengesDetails.forEach((particularChallengesDetail) => {
-        innerHtmlTh = particularChallengesDetail.title;
-        innerHtmlThD = particularChallengesDetail.content;
+//       particularChallengesDetails.forEach((particularChallengesDetail) => {
+//         innerHtmlTh = particularChallengesDetail.title;
+//         innerHtmlThD = particularChallengesDetail.content;
 
-        createTableGridBody();
-      });
-    }
-  });
+//         createTableGridBody();
+//       });
+//     }
+//   });
 
-  fetchChallengesTable.addEventListener("click", (event) => {
-    const target = event.target;
+//   fetchChallengesTable.addEventListener("click", (event) => {
+//     const target = event.target;
 
-    if (target.classList.contains("cheatSheetButton")) {
-      goToCheatSheet();
-    } else if (target.classList.contains("toChallengeButton")) {
-      let goToChallengesLink = target.getAttribute("dataLink");
-      goToChallenges(goToChallengesLink);
-    } else if (target.classList.contains("addChallengeButton")) {
-      goAddChallenge();
-    }
-  });
-};
+//     if (target.classList.contains("cheatSheetButton")) {
+//       goToCheatSheet();
+//     } else if (target.classList.contains("toChallengeButton")) {
+//       let goToChallengesLink = target.getAttribute("dataLink");
+//       goToChallenges(goToChallengesLink);
+//     } else if (target.classList.contains("addChallengeButton")) {
+//       goAddChallenge();
+//     }
+//   });
+// };
+
+//!!!!!!!!!!!!!!!
 
 //   let cheatSheetButtonsTest = document.querySelectorAll(".cheatSheetButton");
 //   console.log(cheatSheetButtonsTest);
