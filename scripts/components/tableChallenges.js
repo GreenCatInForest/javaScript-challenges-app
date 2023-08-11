@@ -1,317 +1,181 @@
 let fetchChallengesTable = document.querySelector("#fetchAllChallengesTable");
 
-let filterBasicChallengesDatas = [];
-let filterOtherChallengesDatas = [];
-let dataArrayGroupsBasicChallenges = [];
-let dataArrayGroupsOtherChallenges = [];
-let dataListBasicChallenges = [];
-
 fetch("./data/data.json")
   .then((response) => response.json())
   .then((datas) => {
     let dataChallenges = datas.challenges;
-    findNestedCheck(dataChallenges);
+    sortDataChallenges(dataChallenges);
   })
   .catch((error) => console.error(error));
 
-// Table Container
+//Data display at grid form
 
-let tableContainer = document.createElement("div");
-let tableHeader = document.createElement("div");
-let tableHead = document.createElement("div");
-let tableButtonsContainer = document.createElement("div");
-let tableBody = document.createElement("div");
+let createTableGridContainer = () => {
+  tableGridContainer = document.createElement("div");
+  tableGridContainer.className = "tableGridContainer";
+  fetchChallengesTable.appendChild(tableGridContainer);
+};
 
-tableContainer.className = "tableGridContainer";
-tableHeader.className = "tableGridHeader";
-tableHead.className = "tableGridHead";
-tableButtonsContainer.className = "tableButtonsContainer";
-tableBody.className = "tableGridBody";
+let createTableGridHeader = () => {
+  let tableGridHeader = document.createElement("div");
+  let tableGridHeaderTitle = document.createElement("div");
+  tableGridHeaderTitle.textContent = innerHtmlTh;
+  tableGridHeader.className = "tableGridHeader grid-item";
+  tableGridHeaderTitle.className = "tableGridHeaderTitle grid-item";
 
-fetchChallengesTable.appendChild(tableContainer);
-tableContainer.appendChild(tableHeader);
-tableContainer.appendChild(tableHead);
-tableContainer.appendChild(tableButtonsContainer);
-tableContainer.appendChild(tableBody);
+  tableGridHeader.appendChild(tableGridHeaderTitle);
+  tableGridContainer.appendChild(tableGridHeader);
 
-// let iterateDataForButtons = (datas) => {
-//   // All data JSON
-//   console.log(datas);
+  let createTableHeaderDescription = () => {
+    let tableGridHeaderDescription = document.createElement("div");
+    tableGridHeaderDescription.textContent = innerHtmlThD;
+    tableGridHeaderDescription.className =
+      "tableGridHeaderDescription grid-item";
+    tableGridHeader.appendChild(tableGridHeaderDescription);
+  };
 
-//   // Array with all the challenges
-//   let dataChallenges = datas.challenges;
-//   console.log(dataChallenges);
+  innerHtmlThD ? createTableHeaderDescription() : {};
+};
 
-//   // find an array with the nested challenges from all the challenges
-// };
+let createTableGridBody = () => {
+  let tableGridBody = document.createElement("div");
+  let tableGridBodyDescription = document.createElement("div");
+  let tableGridBodyTitle = document.createElement("div");
 
-let findNestedCheck = (dataChallenges) => {
-  dataChallenges.forEach((dataChallenge) => {
-    let nestedArrayFirstLevel = dataChallenge.allChallenges;
-    nestedArrayFirstLevel.forEach((nested) => {
-      let checkPass = nested.challenge ? true : false;
-      console.log(Boolean(checkPass));
-      // createTest(checkPass);
-      createTableContent(checkPass, nested);
-    });
+  tableGridBodyTitle.textContent = innerHtmlTh;
+  tableGridBodyDescription.textContent = innerHtmlThD;
+
+  tableGridBody.className = "tableGridBody grid-item";
+  tableGridBodyTitle.className = "tableGridBodyTitle grid-item";
+  tableGridBodyDescription.className = "tableGridBodyDescription grid-item";
+
+  tableGridBody.appendChild(tableGridBodyTitle);
+  tableGridBody.appendChild(tableGridBodyDescription);
+  tableGridContainer.appendChild(tableGridBody);
+};
+
+// Button functions
+
+let goToCheatSheet = () => {
+  console.log("q");
+  window.open("https://www.w3schools.com");
+};
+
+let goToChallenges = (goToChallengesLink) => {
+  console.log(goToChallengesLink);
+  window.open(goToChallengesLink);
+};
+
+let goAddChallenge = () => {
+  console.log("b");
+};
+
+let createTableGridButtons = () => {
+  let tableGridButtonContainer = document.createElement("div");
+  let cheatSheetButton = document.createElement("button");
+  let toChallengeButton = document.createElement("button");
+  let addChallengeButton = document.createElement("button");
+
+  tableGridButtonContainer.className = "tableGridButtonContainer";
+  cheatSheetButton.className = "tableGridButton cheatSheetButton";
+  toChallengeButton.className = "tableGridButton toChallengeButton";
+  addChallengeButton.className = "tableGridButton addChallengeButton";
+
+  cheatSheetButton.textContent = "Cheatsheet";
+  toChallengeButton.textContent = "View a Solution";
+  addChallengeButton.textContent = "+ Add a new challenge";
+
+  tableGridContainer.appendChild(tableGridButtonContainer);
+  tableGridButtonContainer.appendChild(cheatSheetButton);
+  tableGridButtonContainer.appendChild(toChallengeButton);
+  tableGridButtonContainer.appendChild(addChallengeButton);
+};
+
+const sortDataChallenges = (challengesDatas) => {
+  console.log(challengesDatas);
+
+  challengesDatas.forEach((challengesData) => {
+    console.log(challengesData);
+    if (challengesData.name === "basicJsChallenges") {
+      createTableGridContainer();
+
+      let basicChallengesData = challengesData.allChallenges;
+      console.log(basicChallengesData);
+      basicChallengesData.forEach((basicChallengeData) => {
+        innerHtmlTh = basicChallengeData.title;
+        innerHtmlThD = basicChallengeData.content;
+        console.log(
+          challengesData.name +
+            challengesData.pageLink +
+            basicChallengeData.projectLink
+        );
+        createTableGridHeader();
+        createTableGridButtons();
+
+        let toChallengeButton =
+          tableGridContainer.querySelector(".toChallengeButton");
+        toChallengeButton.setAttribute("dataLink", challengesData.pageLink);
+        console.log(challengesData.pageLink);
+
+        let basicChallengesDetails = basicChallengeData.challenge;
+
+        basicChallengesDetails.forEach((basicChallengesDetail) => {
+          innerHtmlTh = basicChallengesDetail.challengeTitle;
+          innerHtmlThD = basicChallengesDetail.challengeDescription;
+
+          createTableGridBody();
+        });
+      });
+    } else {
+      let particularChallengesDetails = challengesData.allChallenges;
+      innerHtmlTh = challengesData.title;
+      innerHtmlThD = "";
+
+      createTableGridHeader();
+      createTableGridButtons();
+
+      particularChallengesDetails.forEach((particularChallengesDetail) => {
+        innerHtmlTh = particularChallengesDetail.title;
+        innerHtmlThD = particularChallengesDetail.content;
+
+        createTableGridBody();
+      });
+    }
+  });
+
+  fetchChallengesTable.addEventListener("click", (event) => {
+    const target = event.target;
+
+    if (target.classList.contains("cheatSheetButton")) {
+      goToCheatSheet();
+    } else if (target.classList.contains("toChallengeButton")) {
+      let goToChallengesLink = target.getAttribute("dataLink");
+      goToChallenges(goToChallengesLink);
+    } else if (target.classList.contains("addChallengeButton")) {
+      goAddChallenge();
+    }
   });
 };
 
-let createTest = (checkPass) => {
-  let createDiv = document.createElement("div");
-  fetchChallengesTable.appendChild(createDiv);
-  if (checkPass === true) {
-    createDiv.innerHTML = "+";
-  } else {
-    createDiv.innerHTML = "-";
-  }
-};
+let cheatSheetButtonsTest = document.querySelectorAll(".cheatSheetButton");
+console.log(cheatSheetButtonsTest);
+let toChallengeButtonsTest = document.querySelectorAll(".toChallengeButton");
+let addChallengeButtonsTest = document.querySelectorAll(".addChallengeButton");
 
-// Table Content
+cheatSheetButtonsTest.forEach((button) => {
+  button.addEventListener("click", goToCheatSheet);
+});
 
-let createTableContent = (checkPass, nested) => {
-  console.log(nested.title);
+toChallengeButtonsTest.forEach((button) => {
+  button.addEventListener("click", goToChallenges);
+});
 
-  let createDiv = document.createElement("div");
-  tableBody.appendChild(createDiv);
+addChallengeButtonsTest.forEach((button) => {
+  button.addEventListener("click", goAddChallenge);
+});
 
-  if (checkPass === true) {
-    createDiv.innerHTML = "+";
-  } else {
-    createDiv.innerHTML = "-";
-  }
-};
-
-// let findNested = () => {
-//   dataChallenges.forEach((dataChallenge) => {
-//     let nestedArrayFirstLevel = dataChallenge.allChallenges;
-
-//     nestedArrayFirstLevel.forEach((nested) => {
-//       if (nested.challenge) {
-//         let nestedArraySecondLevel = nested.challenge;
-//         console.log(nestedArraySecondLevel);
-//       }
-//     });
-
-//     console.log(nestedArrayFirstLevel);
-//   });
-// };
-// findNested();
-
-//   console.log(nestedArrayFirstLevel);
-//   let nestedChallengesExist = () => {
-//     dataChallenge.allChallenges.challenge
-//       ? console.log("+")
-//       : console.log("-");
-//   };
-//   console.log(dataChallenges.some(nestedChallengesExist));
-// });
-
-// Filter basic challenges from others challenges
-
-//   let dataFilterByNames = () => {
-//     dataChallenges.forEach((dataChallenge) => {
-//       dataChallenge.name === "basicJsChallenges"
-//         ? filterBasicChallengesDatas.push(dataChallenge)
-//         : filterOtherChallengesDatas.push(dataChallenge);
-//     });
-//   };
-//   dataFilterByNames();
-//   console.log(filterBasicChallengesDatas);
-//   console.log(filterOtherChallengesDatas);
-
-//   // Groups of basic challenges
-//   filterBasicChallengesDatas.forEach((filterBasicChallengesData) => {
-//     dataArrayGroupsBasicChallenges = filterBasicChallengesData.allChallenges;
-//   });
-//   console.log(dataArrayGroupsBasicChallenges);
-
-//   // List of basic challenges
-
-//   dataArrayGroupsBasicChallenges.forEach((dataArrayGroupsBasicChallenge) => {
-//     dataListBasicChallenges = dataArrayGroupsBasicChallenge.challenge;
-//     console.log(dataListBasicChallenges);
-//   });
-
-//   // Groups of other challenges the same as List of other challenges
-
-//   filterOtherChallengesDatas.forEach((filterOtherChallengesData) => {
-//     dataArrayGroupsOtherChallenges = filterOtherChallengesData.allChallenges;
-//     console.log(dataArrayGroupsOtherChallenges);
-//   });
-
-// Data display at grid form
-
-// let createTableGridContainer = () => {
-//   tableGridContainer = document.createElement("div");
-//   tableGridContainer.className = "tableGridContainer";
-//   fetchChallengesTable.appendChild(tableGridContainer);
-// };
-
-// let createTableGridHeader = () => {
-//   let tableGridHeader = document.createElement("div");
-//   let tableGridHeaderTitle = document.createElement("div");
-//   tableGridHeaderTitle.textContent = innerHtmlTh;
-//   tableGridHeader.className = "tableGridHeader grid-item";
-//   tableGridHeaderTitle.className = "tableGridHeaderTitle grid-item";
-
-//   tableGridHeader.appendChild(tableGridHeaderTitle);
-//   tableGridContainer.appendChild(tableGridHeader);
-
-//   let createTableHeaderDescription = () => {
-//     let tableGridHeaderDescription = document.createElement("div");
-//     tableGridHeaderDescription.textContent = innerHtmlThD;
-//     tableGridHeaderDescription.className =
-//       "tableGridHeaderDescription grid-item";
-//     tableGridHeader.appendChild(tableGridHeaderDescription);
-//   };
-
-//   innerHtmlThD ? createTableHeaderDescription() : {};
-// };
-
-// let createTableGridBody = () => {
-//   let tableGridBody = document.createElement("div");
-//   let tableGridBodyDescription = document.createElement("div");
-//   let tableGridBodyTitle = document.createElement("div");
-
-//   tableGridBodyTitle.textContent = innerHtmlTh;
-//   tableGridBodyDescription.textContent = innerHtmlThD;
-
-//   tableGridBody.className = "tableGridBody grid-item";
-//   tableGridBodyTitle.className = "tableGridBodyTitle grid-item";
-//   tableGridBodyDescription.className = "tableGridBodyDescription grid-item";
-
-//   tableGridBody.appendChild(tableGridBodyTitle);
-//   tableGridBody.appendChild(tableGridBodyDescription);
-//   tableGridContainer.appendChild(tableGridBody);
-// };
-
-// // Button functions
-
-// let goToCheatSheet = () => {
-//   console.log("q");
-//   window.open("https://www.w3schools.com");
-// };
-
-// let goToChallenges = (goToChallengesLink) => {
-//   console.log(goToChallengesLink);
-//   window.open(goToChallengesLink);
-// };
-
-// let goAddChallenge = () => {
-//   console.log("b");
-// };
-
-// let createTableGridButtons = () => {
-//   let tableGridButtonContainer = document.createElement("div");
-//   let cheatSheetButton = document.createElement("button");
-//   let toChallengeButton = document.createElement("button");
-//   let addChallengeButton = document.createElement("button");
-
-//   tableGridButtonContainer.className = "tableGridButtonContainer";
-//   cheatSheetButton.className = "tableGridButton cheatSheetButton";
-//   toChallengeButton.className = "tableGridButton toChallengeButton";
-//   addChallengeButton.className = "tableGridButton addChallengeButton";
-
-//   cheatSheetButton.textContent = "Cheatsheet";
-//   toChallengeButton.textContent = "View a Solution";
-//   addChallengeButton.textContent = "+ Add a new challenge";
-
-//   tableGridContainer.appendChild(tableGridButtonContainer);
-//   tableGridButtonContainer.appendChild(cheatSheetButton);
-//   tableGridButtonContainer.appendChild(toChallengeButton);
-//   tableGridButtonContainer.appendChild(addChallengeButton);
-// };
-
-// const sortDataChallenges = (challengesDatas) => {
-//   console.log(challengesDatas);
-
-//   challengesDatas.forEach((challengesData) => {
-//     console.log(challengesData);
-//     if (challengesData.name === "basicJsChallenges") {
-//       createTableGridContainer();
-
-//       let basicChallengesData = challengesData.allChallenges;
-//       console.log(basicChallengesData);
-//       basicChallengesData.forEach((basicChallengeData) => {
-//         innerHtmlTh = basicChallengeData.title;
-//         innerHtmlThD = basicChallengeData.content;
-//         console.log(
-//           challengesData.name +
-//             challengesData.pageLink +
-//             basicChallengeData.projectLink
-//         );
-//         createTableGridHeader();
-//         createTableGridButtons();
-
-//         let toChallengeButton =
-//           tableGridContainer.querySelector(".toChallengeButton");
-//         toChallengeButton.setAttribute("dataLink", challengesData.pageLink);
-//         console.log(challengesData.pageLink);
-
-//         let basicChallengesDetails = basicChallengeData.challenge;
-
-//         basicChallengesDetails.forEach((basicChallengesDetail) => {
-//           innerHtmlTh = basicChallengesDetail.challengeTitle;
-//           innerHtmlThD = basicChallengesDetail.challengeDescription;
-
-//           createTableGridBody();
-//         });
-//       });
-//     } else {
-//       let particularChallengesDetails = challengesData.allChallenges;
-//       innerHtmlTh = challengesData.title;
-//       innerHtmlThD = "";
-
-//       createTableGridHeader();
-//       createTableGridButtons();
-
-//       particularChallengesDetails.forEach((particularChallengesDetail) => {
-//         innerHtmlTh = particularChallengesDetail.title;
-//         innerHtmlThD = particularChallengesDetail.content;
-
-//         createTableGridBody();
-//       });
-//     }
-//   });
-
-//   fetchChallengesTable.addEventListener("click", (event) => {
-//     const target = event.target;
-
-//     if (target.classList.contains("cheatSheetButton")) {
-//       goToCheatSheet();
-//     } else if (target.classList.contains("toChallengeButton")) {
-//       let goToChallengesLink = target.getAttribute("dataLink");
-//       goToChallenges(goToChallengesLink);
-//     } else if (target.classList.contains("addChallengeButton")) {
-//       goAddChallenge();
-//     }
-//   });
-// };
-
-//!!!!!!!!!!!!!!!
-
-//   let cheatSheetButtonsTest = document.querySelectorAll(".cheatSheetButton");
-//   console.log(cheatSheetButtonsTest);
-//   let toChallengeButtonsTest = document.querySelectorAll(".toChallengeButton");
-//   let addChallengeButtonsTest = document.querySelectorAll(
-//     ".addChallengeButton"
-//   );
-
-//   cheatSheetButtonsTest.forEach((button) => {
-//     button.addEventListener("click", goToCheatSheet);
-//   });
-
-//   toChallengeButtonsTest.forEach((button) => {
-//     button.addEventListener("click", goToChallenges);
-//   });
-
-//   addChallengeButtonsTest.forEach((button) => {
-//     button.addEventListener("click", goAddChallenge);
-//   });
-
-// let handleCheatSheetButtonsTest = () => {};
-// handleCheatSheetButtonsTest();
+let handleCheatSheetButtonsTest = () => {};
+handleCheatSheetButtonsTest();
 
 // Data display at table form
 
