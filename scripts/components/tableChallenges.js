@@ -10,6 +10,7 @@ fetch("./data/data.json")
   .then((datas) => {
     let dataChallenges = datas.challenges;
     findNestedCheck(dataChallenges);
+    createTableContainer();
   })
   .catch((error) => console.error(error));
 
@@ -30,13 +31,52 @@ let findNestedCheck = (dataChallenges) => {
     nestedArrayFirstLevel.forEach((nested) => {
       let checkPass = nested.challenge ? true : false;
       console.log(Boolean(checkPass));
-      createTest(checkPass);
+      //   createTest(checkPass);
+      // createTable(checkPass);
     });
   });
 };
 
 let createTest = (checkPass) => {
   let createDiv = document.createElement("div");
+  fetchChallengesTable.appendChild(createDiv);
+  if (checkPass === true) {
+    createDiv.innerHTML = "+";
+  } else {
+    createDiv.innerHTML = "-";
+  }
+};
+
+// Draw the Table
+
+// Table Container
+let createTableContainer = () => {
+  let tableContainer = document.createElement("div");
+  let tableHeader = document.createElement("div");
+  let tableHead = document.createElement("div");
+  let tableButtonsContainer = document.createElement("div");
+  let tableBody = document.createElement("div");
+
+  tableContainer.className = "tableGridContainer";
+  tableHeader.className = "tableGridHeader";
+  tableHead.className = "tableGridHead";
+  tableButtonsContainer.className = "tableButtonsContainer";
+  tableBody.className = "tableGridBody";
+
+  fetchChallengesTable.appendChild(tableContainer);
+  tableContainer.appendChild(tableHeader);
+  tableContainer.appendChild(tableHead);
+  tableContainer.appendChild(tableButtonsContainer);
+  tableContainer.appendChild(tableBody);
+};
+
+let createTable = (checkPass) => {
+  let createDiv = document.createElement("div");
+
+  let TableHeader = document.createElement("div");
+  let TableHead = document.createElement("div");
+  let TableBody = document.createElement("div");
+
   fetchChallengesTable.appendChild(createDiv);
   if (checkPass === true) {
     createDiv.innerHTML = "+";
@@ -60,20 +100,6 @@ let createTest = (checkPass) => {
 //   });
 // };
 // findNested();
-
-// create Grid Table
-
-let CreateTableContainer;
-let CreateTableHeader;
-let CreateTableHead;
-let CreateTableBody;
-
-let createGridTable = () => {
-  let tableContainer;
-  let tableHeader;
-  let tableHead;
-  let tableBody;
-};
 
 //   console.log(nestedArrayFirstLevel);
 //   let nestedChallengesExist = () => {
