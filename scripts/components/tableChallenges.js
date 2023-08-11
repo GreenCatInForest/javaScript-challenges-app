@@ -8,40 +8,71 @@ let dataListBasicChallenges = [];
 fetch("./data/data.json")
   .then((response) => response.json())
   .then((datas) => {
-    // let challengesDatas = datas.challenges;
-    // console.log(datas.challenges);
-    // sortDataChallenges(challengesDatas);
-    iterateDataForButtons(datas);
+    let dataChallenges = datas.challenges;
+    findNestedCheck(dataChallenges);
   })
   .catch((error) => console.error(error));
 
-let iterateDataForButtons = (datas) => {
-  // All data JSON
-  console.log(datas);
+// let iterateDataForButtons = (datas) => {
+//   // All data JSON
+//   console.log(datas);
 
-  // Array with all the challenges
-  let dataChallenges = datas.challenges;
-  console.log(dataChallenges);
+//   // Array with all the challenges
+//   let dataChallenges = datas.challenges;
+//   console.log(dataChallenges);
 
-  // find an array with the nested challenges from all the challenges
+//   // find an array with the nested challenges from all the challenges
+// };
 
-  let nestedChallengesExist = (nestedArrayFirstLevel) => {
+let findNestedCheck = (dataChallenges) => {
+  dataChallenges.forEach((dataChallenge) => {
+    let nestedArrayFirstLevel = dataChallenge.allChallenges;
     nestedArrayFirstLevel.forEach((nested) => {
-      if (nested.challenge) {
-        let nestedArraySecondLevel = nested.challenge;
-        console.log(nestedArraySecondLevel);
-      }
+      let checkPass = nested.challenge ? true : false;
+      console.log(Boolean(checkPass));
+      createTest(checkPass);
     });
-  };
+  });
+};
 
-  let findNested = () => {
-    dataChallenges.forEach((dataChallenge) => {
-      let nestedArrayFirstLevel = dataChallenge.allChallenges;
-      console.log(nestedArrayFirstLevel);
-      nestedChallengesExist(nestedArrayFirstLevel);
-    });
-  };
-  findNested();
+let createTest = (checkPass) => {
+  let createDiv = document.createElement("div");
+  fetchChallengesTable.appendChild(createDiv);
+  if (checkPass === true) {
+    createDiv.innerHTML = "+";
+  } else {
+    createDiv.innerHTML = "-";
+  }
+};
+
+// let findNested = () => {
+//   dataChallenges.forEach((dataChallenge) => {
+//     let nestedArrayFirstLevel = dataChallenge.allChallenges;
+
+//     nestedArrayFirstLevel.forEach((nested) => {
+//       if (nested.challenge) {
+//         let nestedArraySecondLevel = nested.challenge;
+//         console.log(nestedArraySecondLevel);
+//       }
+//     });
+
+//     console.log(nestedArrayFirstLevel);
+//   });
+// };
+// findNested();
+
+// create Grid Table
+
+let CreateTableContainer;
+let CreateTableHeader;
+let CreateTableHead;
+let CreateTableBody;
+
+let createGridTable = () => {
+  let tableContainer;
+  let tableHeader;
+  let tableHead;
+  let tableBody;
 };
 
 //   console.log(nestedArrayFirstLevel);
