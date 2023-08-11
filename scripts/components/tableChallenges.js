@@ -2,6 +2,7 @@ const fetchChallengesTable = document.querySelector("#fetchAllChallengesTable");
 let filterBasicChallengesDatas = [];
 let filterOtherChallengesDatas = [];
 let dataArrayGroupsBasicChallenges = [];
+let dataArrayGroupsOtherChallenges = [];
 let dataListBasicChallenges = [];
 
 fetch("./data/data.json")
@@ -45,10 +46,16 @@ let iterateDataForButtons = (datas) => {
 
   dataArrayGroupsBasicChallenges.forEach((dataArrayGroupsBasicChallenge) => {
     dataListBasicChallenges = dataArrayGroupsBasicChallenge.challenge;
+    console.log(dataListBasicChallenges);
   });
-  console.log(dataListBasicChallenges);
-};
 
+  // Groups of other challenges the same as List of other challenges
+
+  filterOtherChallengesDatas.forEach((filterOtherChallengesData) => {
+    dataArrayGroupsOtherChallenges = filterOtherChallengesData.allChallenges;
+    console.log(dataArrayGroupsOtherChallenges);
+  });
+};
 // Data display at grid form
 
 let createTableGridContainer = () => {
