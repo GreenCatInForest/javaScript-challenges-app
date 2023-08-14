@@ -25,6 +25,7 @@ const displayCardChallengesContainer = (dataChallenges) => {
         <p>${challenge.content}</p>
         <img src="${challenge.image}" alt="${challenge.title}"/>
         <div>
+        <a href="">CheatSheet</a>
         <a href="${challenge.projectLink}">Explore</a>
         <a href="${challenge.projectGithubLink}">Github</a>
         </div>`;
