@@ -104,12 +104,11 @@ createButtonFunctions = () => {
 
 const sortDataChallenges = (challengesDatas) => {
   console.log(challengesDatas);
+  createTableGridContainer();
 
   challengesDatas.forEach((challengesData) => {
     console.log(challengesData);
     if (challengesData.name === "basicJsChallenges") {
-      createTableGridContainer();
-
       let basicChallengesData = challengesData.allChallenges;
       console.log(basicChallengesData);
 
