@@ -34,8 +34,6 @@ let createTableGridHeader = () => {
       "tableGridHeaderDescription grid-item";
     tableGridHeader.appendChild(tableGridHeaderDescription);
   };
-
-  innerHtmlThD ? createTableHeaderDescription() : {};
 };
 
 let createTableGridBody = () => {
