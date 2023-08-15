@@ -6,6 +6,7 @@
       "name": "basicJsChallenges",
       "pageLink": "./basicJsChallenges.html",
       "title": "basic JS Challenges",
+      "cheatSheetLink": "https://js-showcase-foundations.vercel.app/",
 
       "allChallenges": [
         {

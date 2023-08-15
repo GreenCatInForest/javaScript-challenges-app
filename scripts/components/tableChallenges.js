@@ -114,10 +114,12 @@ const sortDataChallenges = (challengesDatas) => {
         innerHtmlTh = basicChallengeData.title;
         innerHtmlThD = basicChallengeData.content;
         goToChallengesLink = challengesData.pageLink;
+        buttonLink = challengesData.cheatSheetLink;
         console.log(
           challengesData.name +
-            challengesData.pageLink +
-            basicChallengeData.projectLink
+            challengesData.content +
+            basicChallengeData.projectLink +
+            buttonLink
         );
         createTableGridHeader();
         createTableGridButtons();
