@@ -14,6 +14,7 @@
           "image": "./images/surfing-g130578680_1280.jpg",
           "projectLink": "./challenges/startersJsChallenges.html",
           "projectGithubLink": "path/to/projectGithubLink",
+          "cheatSheetLink": "https://js-showcase-foundations.vercel.app/",
           "challenge": [
             {
               "challengeTitle": "Assigning a values",
