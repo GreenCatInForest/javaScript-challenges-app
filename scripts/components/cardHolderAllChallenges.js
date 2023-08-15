@@ -25,7 +25,7 @@ const displayCardChallengesContainer = (dataChallenges) => {
         <p>${challenge.content}</p>
         <img src="${challenge.image}" alt="${challenge.title}"/>
         <div>
-        <a href="${challenge.cheatSheetLink}">CheatSheet</a>
+        <a href="https://js-showcase-foundations.vercel.app/">CheatSheet</a>
         <a href="${challenge.projectLink}">Explore</a>
         <a href="${challenge.projectGithubLink}">Github</a>
         </div>`;
