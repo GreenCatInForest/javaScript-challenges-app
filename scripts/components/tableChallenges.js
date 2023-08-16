@@ -1,13 +1,33 @@
 let fetchChallengesTable = document.querySelector("#fetchAllChallengesTable");
 
-fetch("./data/data.json")
-  .then((response) => response.json())
+// fetch data from JSON using async await
+
+let fetchChallenges = async () => {
+  try {
+    const response = await fetch("./data/data.json");
+    if (!response.ok) {
+      throw new Error("Network response was not OK");
+    } else {
+      return (datas = await response.json());
+    }
+  } catch (error) {
+    console.error("There has been a problem with fetch operation:", error);
+  }
+};
+
+// check data using promises
+
+fetchChallenges()
   .then((datas) => {
+    console.log("Parsed JSON data:", datas);
+    console.log("Fetched Data Type:", typeof datas);
     let dataChallenges = datas.challenges;
     sortDataChallenges(dataChallenges);
     createButtonFunctions();
   })
-  .catch((error) => console.error(error));
+  .catch((error) => {
+    console.error("Error:", error);
+  });
 
 //Data display at grid form
 
