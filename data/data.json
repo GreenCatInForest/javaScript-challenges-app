@@ -18,25 +18,31 @@
           "cheatSheetLink": "https://js-showcase-foundations.vercel.app/",
           "challenge": [
             {
-              "challengeTitle": "Assigning a values",
-              "challengeDescription": "Create a variable without assigning a value and then assign a value later in the code.",
+              "challengeType": "Basic challenges",
+              "challengeSubtopic": "Variable Types",
+              "challengeTitle": "Create variables and assign a values. Concatenate a string with a number",
+              "challengeDescription": "Declare multiple variables without assigning values. Assign different types of values (string, number, boolean) to variables and print them. Concatenate a string with multiple numbers using template literals. Create a function that concatenates any data type with a string.",
               "level": "basic",
               "challengeContent": ""
             },
             {
-              "challengeTitle": "Concatenate a string with a number and observe the result.",
-              "level": "basic",
-              "challengeDescription": "Concatenate a string with a number and observe the result.",
+              "challengeType": "",
+              "challengeTitle": "",
+              "challengeDescription": "",
+              "level": "",
               "challengeContent": ""
             },
             {
+              "challengeType": "Basic challenges",
+              "challengeSubtopic": "Conditionals",
               "challengeTitle": "Is Array?",
-              "challengeDescription": "Create a function that checks if a given value is an array or not. Implement a function to check if a variable is defined or null.",
+              "challengeDescription": "Implement the function to check if a variable is a specific type (e.g., object, number). Modify the function to handle nested arrays and objects.",
               "level": "basic",
               "challengeContent": ""
             },
 
             {
+              "challengeType": "",
               "challengeTitle": "Template literals",
               "challengeDescription": "Use template literals to construct a dynamic string with variables.",
               "level": "basic",
@@ -112,27 +118,317 @@
               "challengeContent": ""
             },
             {
-              "challengeTitle": "Different data types of NaN",
-              "challengeDescription": "Explore the different data types of NaN, undefined, null, and Infinity.",
-              "level": "basic",
+              "challengeType": "",
+              "challengeSubtopic": "Undefined and Null",
+              "challengeTitle": "Undefined vs. Null:",
+              "challengeDescription": "Declare a variable value without initializing it. Print the type and value of value. Then, assign null to value and print its type and value. Expected Output: undefined, undefined; object, null",
+              "level": "",
               "challengeContent": ""
             },
             {
-              "challengeTitle": "Different data types of NaN",
-              "challengeDescription": "Explore the different data types of NaN, undefined, null, and Infinity.",
-              "level": "basic",
+              "challengeType": "",
+              "challengeSubtopic": "Undefined and Null",
+              "challengeTitle": "Comparing Undefined and Null",
+              "challengeDescription": "Declare two variables a and b, both uninitialized. Compare them using == and === operators. Explain the results and why === is preferred for type checking.",
+              "level": "",
+              "challengeContent": ""
+            },
+
+            {
+              "challengeType": "Relevant to real industries",
+              "challengeSubtopic": "Variable Types",
+              "challengeTitle": "Product Catalog",
+              "challengeDescription": "Build a product catalog system for an e-commerce platform. Define variables representing product names, prices, and categories. Initialize them with sample data. Demonstrate different data types for product information.",
+              "level": "",
               "challengeContent": ""
             },
             {
-              "challengeTitle": "Different data types of NaN",
-              "challengeDescription": "Explore the different data types of NaN, undefined, null, and Infinity.",
-              "level": "basic",
+              "challengeType": "Relevant to real industries",
+              "challengeSubtopic": "Variable Types",
+              "challengeTitle": "User Profiles",
+              "challengeDescription": "Develop a user profiles system for a social networking site. Declare variables for user names, ages, and interests. Initialize them with various data types, including strings, numbers, and arrays.",
+              "level": "",
               "challengeContent": ""
             },
             {
-              "challengeTitle": "Different data types of NaN",
-              "challengeDescription": "Explore the different data types of NaN, undefined, null, and Infinity.",
-              "level": "basic",
+              "challengeType": "Relevant to real industries",
+              "challengeSubtopic": "Variable Types",
+              "challengeTitle": "Order Tracking",
+              "challengeDescription": "Create an order tracking system for a restaurant. Declare variables for order numbers, menu items, and quantities. Initialize them with relevant data types, such as integers and arrays.",
+              "level": "",
+              "challengeContent": ""
+            },
+            {
+              "challengeType": "Relevant to real industries",
+              "challengeSubtopic": "Variable Types",
+              "challengeTitle": "Sensor Data",
+              "challengeDescription": "Design a system for collecting sensor data in a smart home. Declare variables for temperature, humidity, and motion detection status. Initialize them with appropriate data types, like floats and booleans.",
+              "level": "",
+              "challengeContent": ""
+            },
+            {
+              "challengeType": "Relevant to real industries",
+              "challengeSubtopic": "Variable Types",
+              "challengeTitle": "Customer Data",
+              "challengeDescription": "Design a CRM system for a sales team. Declare variables for customer names, contact details, and purchase history. Initialize them with diverse data types, including strings, objects, and arrays.",
+              "level": "",
+              "challengeContent": ""
+            },
+            {
+              "challengeType": "Relevant to real industries",
+              "challengeSubtopic": "Undefined and Null",
+              "challengeTitle": "Data Initialization",
+              "challengeDescription": "Develop a data entry system where users input personal details. Use undefined for optional fields that haven't been filled out yet, and null for intentionally empty fields.",
+              "level": "",
+              "challengeContent": ""
+            },
+            {
+              "challengeType": "Relevant to real industries",
+              "challengeSubtopic": "Undefined and Null",
+              "challengeTitle": "Default Values",
+              "challengeDescription": "Create a function that accepts parameters for a user's preferences. Use null to indicate preferences that haven't been set yet, and provide default values for undefined preferences.",
+              "level": "",
+              "challengeContent": ""
+            },
+            {
+              "challengeType": "Relevant to real industries",
+              "challengeSubtopic": "Undefined and Null",
+              "challengeTitle": "Checking for Values",
+              "challengeDescription": "Write a script that validates user inputs in a form. Check for undefined and null values, and provide appropriate error messages for missing or incomplete data.",
+              "level": "",
+              "challengeContent": ""
+            },
+            {
+              "challengeType": "Relevant to real industries",
+              "challengeSubtopic": "Undefined and Null",
+              "challengeTitle": "Object Properties",
+              "challengeDescription": "Build an employee management system. Use undefined to represent missing properties, such as phone numbers, and set properties to null to indicate intentionally empty values.",
+              "level": "",
+              "challengeContent": ""
+            },
+            {
+              "challengeType": "Relevant to real industries",
+              "challengeSubtopic": "Undefined and Null",
+              "challengeTitle": "Database Handling",
+              "challengeDescription": "Design a database interface for an application. Use null to signify missing data when querying the database, and handle undefined values during data insertion.",
+              "level": "",
+              "challengeContent": ""
+            },
+            {
+              "challengeType": "Relevant to real industries",
+              "challengeSubtopic": "Constants",
+              "challengeTitle": "Maths Constants",
+              "challengeDescription": "Create a math library that provides constants like pi and e. Declare these constants as const variables and use them in mathematical calculations throughout the library. Declare a constant variable PI and assign the value of the mathematical constant π (pi). Use it to calculate the circumference of a circle given its radius. Print the result.",
+              "level": "",
+              "challengeContent": ""
+            },
+            {
+              "challengeType": "Relevant to real industries",
+              "challengeSubtopic": "Constants",
+              "challengeTitle": "Configuration Settings",
+              "challengeDescription": "Develop a configuration manager for a web application. Use const to define configuration settings that should remain constant during the application's lifecycle, such as API endpoints and default values.",
+              "level": "",
+              "challengeContent": ""
+            },
+            {
+              "challengeType": "Relevant to real industries",
+              "challengeSubtopic": "Constants",
+              "challengeTitle": "Physical Constants",
+              "challengeDescription": "Build a physics simulation application. Declare constants for physical quantities like the speed of light, gravitational constant, and Planck's constant. Use these constants in simulations and calculations. Declare a constant variable SPEED_OF_LIGHT and assign the value of the speed of light in meters per second (299,792,458 m/s). Use it to calculate the time it takes for light to travel a certain distance. ",
+              "level": "",
+              "challengeContent": ""
+            },
+            {
+              "challengeType": "Relevant to real industries",
+              "challengeSubtopic": "Constants",
+              "challengeTitle": "Conversion Factors",
+              "challengeDescription": "Design a unit conversion utility. Declare constants for conversion factors between different units, such as length, weight, and temperature. Ensure these constants cannot be modified during runtime.",
+              "level": "",
+              "challengeContent": ""
+            },
+            {
+              "challengeType": "Relevant to real industries",
+              "challengeSubtopic": "Constants",
+              "challengeTitle": "Application-wide Parameters",
+              "challengeDescription": "Create a global configuration object for a multi-module application. Define const variables to hold parameters shared across the application, such as authentication settings and API keys.",
+              "level": "",
+              "challengeContent": ""
+            },
+            {
+              "challengeType": "Relevant to real industries",
+              "challengeSubtopic": "Constants",
+              "challengeTitle": "Configurable Constants",
+              "challengeDescription": "Define a constant variable MAX_USERS and set its value to 100. Use it in a function that simulates user registration. If the number of users exceeds MAX_USERS, display a message indicating that registration is closed.",
+              "level": "",
+              "challengeContent": ""
+            },
+            {
+              "challengeType": "Relevant to real industries",
+              "challengeSubtopic": "Constants",
+              "challengeTitle": "Time Constants",
+              "challengeDescription": "Create a constant variable SECONDS_PER_MINUTE and set it to 60. Write a function that converts minutes to seconds using this constant. Test the function with various values.",
+              "level": "",
+              "challengeContent": ""
+            },
+            {
+              "challengeType": "Relevant to real industries",
+              "challengeSubtopic": "Constants",
+              "challengeTitle": "API Keys and Constants",
+              "challengeDescription": "Imagine you're building an application that interacts with an external API. Declare a constant variable API_KEY and assign it a sample API key string. Use it in your API requests for authentication.",
+              "level": "",
+              "challengeContent": ""
+            },
+            {
+              "challengeType": "Relevant to real industries",
+              "challengeSubtopic": "Scope and Block-Level Variables",
+              "challengeTitle": "Local vs. Global",
+              "challengeDescription": "Declare a global variable outside of any function and a local variable inside a function. Print both variables within and outside of the function to observe their scope behavior.",
+              "level": "",
+              "challengeContent": ""
+            },
+            {
+              "challengeType": "Relevant to real industries",
+              "challengeSubtopic": "Scope and Block-Level Variables",
+              "challengeTitle": "Block-Level Variables",
+              "challengeDescription": "Write a function that uses a block-level variable declared with the let keyword. Access this variable both inside and outside of the block to demonstrate block-level scope.",
+              "level": "",
+              "challengeContent": ""
+            },
+            {
+              "challengeType": "Relevant to real industries",
+              "challengeSubtopic": "Scope and Block-Level Variables",
+              "challengeTitle": "Scope Chain",
+              "challengeDescription": "Create a nested function that references a variable from its parent function's scope. Illustrate how the scope chain works by accessing the variable from within the nested function.",
+              "level": "",
+              "challengeContent": ""
+            },
+            {
+              "challengeType": "Relevant to real industries",
+              "challengeSubtopic": "Scope and Block-Level Variables",
+              "challengeTitle": "Function and Global Variables",
+              "challengeDescription": "Declare a variable inside a function and another variable with the same name outside of any function (global scope). Print both variables and explain how JavaScript handles variable naming conflicts.",
+              "level": "",
+              "challengeContent": ""
+            },
+            {
+              "challengeType": "Relevant to real industries",
+              "challengeSubtopic": "Scope and Block-Level Variables",
+              "challengeTitle": "Lexical Scope",
+              "challengeDescription": "Implement a function within another function. Declare a variable in the outer function's scope and try to access it from the inner function. Explain the concept of lexical scope.",
+              "level": "",
+              "challengeContent": ""
+            },
+
+            {
+              "challengeType": "Relevant to real industries",
+              "challengeSubtopic": "Scope and Block-Level Variables",
+              "challengeTitle": "Variable Shadowing",
+              "challengeDescription": "Create a scenario where a local variable has the same name as a global variable. Demonstrate how the local variable takes precedence within its scope, hiding the global variable.",
+              "level": "",
+              "challengeContent": ""
+            },
+            {
+              "challengeType": "Relevant to real industries",
+              "challengeSubtopic": "Scope and Block-Level Variables",
+              "challengeTitle": "Closures and Scope",
+              "challengeDescription": "Develop a closure that accesses variables from its parent function's scope. Showcase how closures retain access to variables even after the parent function has completed execution.",
+              "level": "",
+              "challengeContent": ""
+            },
+            {
+              "challengeType": "Relevant to real industries",
+              "challengeSubtopic": "Hoisting",
+              "challengeTitle": "Variable Hoisting",
+              "challengeDescription": "Declare a variable x and initialize it with a value. Write a function that tries to access the variable before it's declared within the function. Explain the concept of variable hoisting and the expected behavior.",
+              "level": "",
+              "challengeContent": ""
+            },
+            {
+              "challengeType": "Relevant to real industries",
+              "challengeSubtopic": "Hoisting",
+              "challengeTitle": "Function Hoisting:",
+              "challengeDescription": "Declare a function multiply that takes two parameters and returns their product. Call the function before it's declared and explain how function hoisting allows this behavior.",
+              "level": "",
+              "challengeContent": ""
+            },
+            {
+              "challengeType": "Relevant to real industries",
+              "challengeSubtopic": "Hoisting",
+              "challengeTitle": "Block-Level Hoisting",
+              "challengeDescription": "Inside a block of code (using curly braces), declare a variable y and initialize it with a value. Print the value of y within the block and outside of the block. Explain the behavior of block-level hoisting.",
+              "level": "",
+              "challengeContent": ""
+            },
+            {
+              "challengeType": "Relevant to real industries",
+              "challengeSubtopic": "Coding Style and Best Practices",
+              "challengeTitle": "Avoid Global Variables",
+              "challengeDescription": "Create a code snippet that demonstrates the dangers of using global variables. Show how global variables can lead to unintended side effects and how to avoid them using local scope.",
+              "level": "",
+              "challengeContent": ""
+            },
+            {
+              "challengeType": "Relevant to real industries",
+              "challengeSubtopic": "Coding Style and Best Practices",
+              "challengeTitle": "Modularization",
+              "challengeDescription": "Write a program that calculates the area of different shapes. Refactor the program by separating the area calculation logic into individual functions for each shape.",
+              "level": "",
+              "challengeContent": ""
+            },
+            {
+              "challengeType": "Relevant to real industries",
+              "challengeSubtopic": "Common Mistakes and Debugging",
+              "challengeTitle": "Debugging Tools",
+              "challengeDescription": "Create a code snippet with a logical error (e.g., incorrect formula for calculating area). Use browser developer tools to set breakpoints and step through the code to identify and fix the error.",
+              "level": "",
+              "challengeContent": ""
+            },
+            {
+              "challengeType": "Relevant to real industries",
+              "challengeSubtopic": "Common Mistakes and Debugging",
+              "challengeTitle": "Undefined Functions",
+              "challengeDescription": "Write a function calculateArea that calculates the area of a rectangle. Call the function with incorrect parameters and explain the error message that occurs.",
+              "level": "",
+              "challengeContent": ""
+            },
+            {
+              "challengeType": "Relevant to real industries",
+              "challengeSubtopic": "",
+              "challengeTitle": "Database Handling",
+              "challengeDescription": "",
+              "level": "",
+              "challengeContent": ""
+            },
+            {
+              "challengeType": "Relevant to real industries",
+              "challengeSubtopic": "",
+              "challengeTitle": "Database Handling",
+              "challengeDescription": "",
+              "level": "",
+              "challengeContent": ""
+            },
+            {
+              "challengeType": "Relevant to real industries",
+              "challengeSubtopic": "",
+              "challengeTitle": "Database Handling",
+              "challengeDescription": "",
+              "level": "",
+              "challengeContent": ""
+            },
+            {
+              "challengeType": "Relevant to real industries",
+              "challengeSubtopic": "",
+              "challengeTitle": "Database Handling",
+              "challengeDescription": "",
+              "level": "",
+              "challengeContent": ""
+            },
+            {
+              "challengeType": "Relevant to real industries",
+              "challengeSubtopic": "",
+              "challengeTitle": "Database Handling",
+              "challengeDescription": "",
+              "level": "",
               "challengeContent": ""
             }
           ]
